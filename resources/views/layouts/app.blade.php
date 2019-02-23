@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title', '九牧管业') - 湖南晌当当九牧管业有限公司</title>
+  <title>@yield('title', __('Abbreviation')) - {{ __('Corporate name') }}</title>
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
