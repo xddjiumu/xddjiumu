@@ -34,3 +34,36 @@ Route::get('email/resend', 'Auth\VerificationController@resend')->name('verifica
 Route::get('/', 'PagesController@root')->name('root');
 
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
+
+Route::get('/home', function () { return view('xdd.index'); });
+Route::get('/brand', function () { return view('xdd.ppai_01'); });
+Route::get('/about', function () { return view('xdd.ppai_02'); });
+Route::get('/idea', function () { return view('xdd.ppai_03'); });
+Route::get('/honor', function () { return view('xdd.ppai_04'); });
+
+Route::get('/product', function () { return view('xdd.ppcanp_01'); });
+Route::get('/products', function () { return view('xdd.ppcanp_01_02'); });
+
+Route::get('/productt', function () { return view('xdd.ppcanp_02'); });
+Route::get('/productts', function () { return view('xdd.ppcanp_02_02'); });
+
+Route::get('/producs', function () { return view('xdd.ppcanp_03'); });
+Route::get('/producf', function () { return view('xdd.ppcanp_04'); });
+
+Route::get('/solution', function () { return view('xdd.ppd-jjfa'); });
+
+Route::get('/news', function () { return view('xdd.ppd-news_01'); });
+Route::get('/newsone', function () { return view('xdd.ppd-news_02'); });
+
+Route::get('/marketing', function () { return view('xdd.ppd-ninter_01'); });
+Route::get('/marketingone', function () { return view('xdd.ppd-ninter_02'); });
+
+Route::get('/cuservice', function () { return view('xdd.ppd-nkefu_01'); });
+Route::get('/cuserviceone', function () { return view('xdd.ppd-nkefu_02'); });
+Route::get('/cuserviceflo', function () { return view('xdd.ppd-nkefu_03'); });
+
+Route::get('/case', function () { return view('xdd.ppd-nkkaces_01'); });
+Route::get('/caseone', function () { return view('xdd.ppd-nkkaces_02'); });
+
+Route::get('/contactus', function () { return view('xdd.ppd-nkkaz_cc01'); });
+Route::get('/contactusone', function () { return view('xdd.ppd-nkkaz_cc02'); });
