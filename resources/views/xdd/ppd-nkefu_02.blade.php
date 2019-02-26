@@ -22,7 +22,7 @@
 <div class="header_wrap">
   <div class="header">
     <div class="logo">
-      <a href="/home" title="首页"><img src="/xdd/images/logo.png"/></a>
+      <a href="/" title="首页"><img src="/xdd/images/logo.png"/></a>
     </div>
     <div class="down">
       <a href="http://dl.jomugy.com/sgb/index.php?s=/Admin/Xkuser/downloadphoto" target="_blank">管路图下载</a>
@@ -33,7 +33,7 @@
     <div id="menu">
       <ul class="nav">
         <li id="m1" class="m">
-        <h3><a href="/home">首页</a></h3>
+        <h3><a href="/">首页</a></h3>
         </li>
         <li id="m2" class="m">
         <h3><a href="/brand">品牌介绍</a></h3>
@@ -330,8 +330,8 @@ http://m.10brandchina.com/vote/startin.php?id=39803?tg08wl
     </table>
   </div>
   <div class='page'>
-    <span class='current'>1</span><span><a href='/bs//cuserviceone&page=2'>2</a></span><span><a href='/bs//cuserviceone&page=3'>3</a></span><span><a href='/bs//cuserviceone&page=4'>4</a></span><span><a href='/bs//cuserviceone&page=5'>5</a></span><span><a href='/bs//cuserviceone&page=6'>6</a></span><span class='next'><a href='/bs//cuserviceone&page=2' title='下一页'></a></span><span class='last'><a href='/bs//cuserviceone&page=10' title="跳到第10页"></a></span>
-  </div>
+  <span class='current'>1</span></span>
+</div>
   <div class="mes_form mtop">
     <ul>
       <form method="post" action="contactsave.asp">

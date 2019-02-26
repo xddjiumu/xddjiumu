@@ -22,7 +22,7 @@
 <div class="header_wrap">
   <div class="header">
     <div class="logo">
-      <a href="/home" title="首页"><img src="/xdd/images/logo.png"/></a>
+      <a href="/" title="首页"><img src="/xdd/images/logo.png"/></a>
     </div>
     <div class="down">
       <a href="http://dl.jomugy.com/sgb/index.php?s=/Admin/Xkuser/downloadphoto" target="_blank">管路图下载</a>
@@ -33,7 +33,7 @@
     <div id="menu">
       <ul class="nav">
         <li id="m1" class="m">
-        <h3><a href="/home">首页</a></h3>
+        <h3><a href="/">首页</a></h3>
         </li>
         <li id="m2" class="m">
         <h3><a href="/brand">品牌介绍</a></h3>
@@ -150,66 +150,66 @@
   <table cellspacing='0' cellspadding='0' width='100%' class='hlist'>
   <tr>
     <td>
-      <a href="/xdd/images/1.jpg" class='fcbox' rel='group' title="高尔夫别墅"><img src="/xdd/images/aces1.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="高尔夫别墅"><img src="/xdd/images/aces1.jpg">
       <h3>高尔夫别墅</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/2.jpg" class='fcbox' rel='group' title="金域碧光小区"><img src="/xdd/images/aces2.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="金域碧光小区"><img src="/xdd/images/aces2.jpg">
       <h3>金域碧光小区</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/3.jpg" class='fcbox' rel='group' title="温州公馆"><img src="/xdd/images/aces3.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="温州公馆"><img src="/xdd/images/aces3.jpg">
       <h3>温州公馆</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/4.jpg" class='fcbox' rel='group' title="苏州河岸别墅"><img src="/xdd/images/aces4.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="苏州河岸别墅"><img src="/xdd/images/aces4.jpg">
       <h3>苏州河岸别墅</h3>
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="/xdd/images/5.jpg" class='fcbox' rel='group' title="苏州天鹅湖小区"><img src="/xdd/images/aces5.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="苏州天鹅湖小区"><img src="/xdd/images/aces5.jpg">
       <h3>苏州天鹅湖小区</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/6.jpg" class='fcbox' rel='group' title="浩富圆小区"><img src="/xdd/images/aces6.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="浩富圆小区"><img src="/xdd/images/aces6.jpg">
       <h3>浩富圆小区</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/7.jpg" class='fcbox' rel='group' title="益园公馆"><img src="/xdd/images/aces7.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="益园公馆"><img src="/xdd/images/aces7.jpg">
       <h3>益园公馆</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/8.jpg" class='fcbox' rel='group' title="迈昌一号别墅"><img src="/xdd/images/aces8.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="迈昌一号别墅"><img src="/xdd/images/aces8.jpg">
       <h3>迈昌一号别墅</h3>
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="/xdd/images/9.jpg" class='fcbox' rel='group' title="东野墅"><img src="/xdd/images/aces9.jpg">
+      <a href="javacript:void(0);" class='fcbox' rel='group' title="东野墅"><img src="/xdd/images/aces9.jpg">
       <h3>东野墅</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/10.jpg" class='fcbox' rel='group' title="西方天籁公馆"><img src="/xdd/images/aces10.jpg">
+      <a href=""javacript:void(0);" class='fcbox' rel='group' title="西方天籁公馆"><img src="/xdd/images/aces10.jpg">
       <h3>西方天籁公馆</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/11.jpg" class='fcbox' rel='group' title="南海明珠别墅"><img src="/xdd/images/aces11.jpg">
+      <a href=""javacript:void(0);" class='fcbox' rel='group' title="南海明珠别墅"><img src="/xdd/images/aces11.jpg">
       <h3>南海明珠别墅</h3>
       </a>
     </td>
     <td>
-      <a href="/xdd/images/12.jpg" class='fcbox' rel='group' title="天际独幢"><img src="/xdd/images/aces12.jpg">
+      <a href=""javacript:void(0);" class='fcbox' rel='group' title="天际独幢"><img src="/xdd/images/aces12.jpg">
       <h3>天际独幢</h3>
       </a>
     </td>

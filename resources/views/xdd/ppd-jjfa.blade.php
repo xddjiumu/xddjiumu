@@ -22,7 +22,7 @@
 <div class="header_wrap">
   <div class="header">
     <div class="logo">
-      <a href="/home" title="首页"><img src="/xdd/images/logo.png"/></a>
+      <a href="/" title="首页"><img src="/xdd/images/logo.png"/></a>
     </div>
     <div class="down">
       <a href="http://dl.jomugy.com/sgb/index.php?s=/Admin/Xkuser/downloadphoto" target="_blank">管路图下载</a>
@@ -33,7 +33,7 @@
     <div id="menu">
       <ul class="nav">
         <li id="m1" class="m">
-        <h3><a href="/home">首页</a></h3>
+        <h3><a href="/">首页</a></h3>
         </li>
         <li id="m2" class="m">
         <h3><a href="/brand">品牌介绍</a></h3>
@@ -117,9 +117,9 @@
   </script>
   <div class="container">
     <div id="iPicture" data-interaction="hover">
-      <div class="ip_slide">
+      <!-- <div class="ip_slide">
         <img class="ip_tooltipImg" src="/xdd/images/bg.png" alt="" width="1140" height="900"/>
-        <div class="ip_tooltip ip_img32" style="top:600px; left:230px;" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="btt-slide">
+        <div class="ip_tooltip ip_img32" style="top:485px; left:208px;" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="btt-slide">
           <a href="/producf" title="宝士特PE-RT阻氧管"><img src="/xdd/images/ip4.jpg" alt="宝士特PE-RT阻氧管"/></a>
           <h2>
         宝士特PE-RT阻氧管
@@ -137,13 +137,13 @@
         精品宝绿系列管材
           </h2>
         </div>
-        <div class="ip_tooltip ip_img32" style="top: 805px; left: 620px;" data-button="moreblue" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="btt-slide">
+        <div class="ip_tooltip ip_img32" style="top: 485px; left: 414px;" data-button="moreblue" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="btt-slide">
           <a href="/producs" title="PE-RT采暖管"><img src="/xdd/images/ip3.jpg" alt="PE-RT采暖管"/></a>
           <h2>
         PE-RT采暖管
           </h2>
         </div>
-      </div>
+      </div> -->
     </div>
     <script type="text/javascript">$( "#iPicture" ).iPicture();
     </script>

@@ -22,7 +22,7 @@
 <div class="header_wrap">
   <div class="header">
     <div class="logo">
-      <a href="/home" title="首页"><img src="/xdd/images/logo.png"/></a>
+      <a href="/" title="首页"><img src="/xdd/images/logo.png"/></a>
     </div>
     <div class="down">
       <a href="http://dl.jomugy.com/sgb/index.php?s=/Admin/Xkuser/downloadphoto" target="_blank">管路图下载</a>
@@ -33,7 +33,7 @@
     <div id="menu">
       <ul class="nav">
         <li id="m1" class="m">
-        <h3><a href="/home">首页</a></h3>
+        <h3><a href="/">首页</a></h3>
         </li>
         <li id="m2" class="m">
         <h3><a href="/brand">品牌介绍</a></h3>
@@ -161,15 +161,14 @@
         <img src="/xdd/images/contact_pic.jpg" alt=""/>
       </td>
       <td>
-        无论您在何时何地，有需要我们，只需拨打全国统一服务热线：<strong>400-6318-669</strong>，我们就近服务网点立即为您服务，剩下的事都由我们来搞定。您再也不必为记错电话、当地服务电话的变更而烦恼了。<br/><br/>
+        无论您在何时何地，有需要我们，只需拨打全国统一服务热线：<strong>400-041-8868</strong>，我们就近服务网点立即为您服务，剩下的事都由我们来搞定。您再也不必为记错电话、当地服务电话的变更而烦恼了。<br/><br/>
         <h2>湖南响当当九牧管业有限公司</h2>
         <ul>
-          <li>地址：江苏省苏州市吴江区七都镇临湖开发区</li>
-          <li>邮编：215234</li>
-          <li>电话：0512－63828669   0512－63818669</li>
-          <li>传真：0512 - 63810669</li>
-          <li>邮箱：jomugy@jomugy.com</li>
-          <li>网址：www.jomugy.com</li>
+          <li>地址：湖南省长沙市雨花区万家丽中路华晨世纪广场16F</li>
+          <li>邮编：410016</li>
+          <li>电话：400-041-8868</li>
+          <li>邮箱：liuweihjyalms@163.com</li>
+          <li>网址：www.xddjiumu.com</li>
         </ul>
       </td>
     </tr>

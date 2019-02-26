@@ -22,7 +22,7 @@
 <div class="header_wrap">
   <div class="header">
     <div class="logo">
-      <a href="/home" title="首页"><img src="/xdd/images/logo.png"/></a>
+      <a href="/" title="首页"><img src="/xdd/images/logo.png"/></a>
     </div>
     <div class="down">
       <a href="http://dl.jomugy.com/sgb/index.php?s=/Admin/Xkuser/downloadphoto" target="_blank">管路图下载</a>
@@ -33,7 +33,7 @@
     <div id="menu">
       <ul class="nav">
         <li id="m1" class="m">
-        <h3><a href="/home">首页</a></h3>
+        <h3><a href="/">首页</a></h3>
         </li>
         <li id="m2" class="m">
         <h3><a href="/brand">品牌介绍</a></h3>
@@ -239,11 +239,11 @@ $(document).ready(function(){
       </a></li>
       <li class="item" style=" background:none !important"><a href="/cuservice" title="服务中心">
       <div class="ico">
-        <img src="/xdd/images/ico4.png" alt="服务热线：400-6318-669">
+        <img src="/xdd/images/ico4.png" alt="服务热线：400-041-8868">
       </div>
       <div class="itit">
         <div>
-          <h2 class="fontr">400-6318-669</h2>
+          <h2 class="fontr">400-041-8868</h2>
           <h2>服务热线</h2>
         </div>
       </div>

@@ -22,7 +22,7 @@
 <div class="header_wrap">
   <div class="header">
     <div class="logo">
-      <a href="/home" title="首页"><img src="/xdd/images/logo.png"/></a>
+      <a href="/" title="首页"><img src="/xdd/images/logo.png"/></a>
     </div>
     <div class="down">
       <a href="http://dl.jomugy.com/sgb/index.php?s=/Admin/Xkuser/downloadphoto" target="_blank">管路图下载</a>
@@ -33,7 +33,7 @@
     <div id="menu">
       <ul class="nav">
         <li id="m1" class="m">
-        <h3><a href="/home">首页</a></h3>
+        <h3><a href="/">首页</a></h3>
         </li>
         <li id="m2" class="m">
         <h3><a href="/brand">品牌介绍</a></h3>
@@ -176,11 +176,11 @@
   <script type="text/javascript">
     var map = new AMap.Map('container',{
             resizeEnable: true,
-            zoom: 10,
-            center: [120.374718,30.933005]
+            zoom: 12,
+            center: [113.035361,28.174006]
     });
     var marker = new AMap.Marker({
-            position: [120.429427,30.950068]
+            position: [113.035361,28.174006]
     });
     marker.setMap(map);
     marker.on('click',function(e){
@@ -190,12 +190,12 @@
        infowindow = new AMap.AdvancedInfoWindow({
         content: '<div class="info-title">湖南响当当九牧管业有限公司</div><div class="info-content">'+
                 ''+
-                '地址：江苏省苏州市吴江区七都镇临湖开发区<br/>'+
-                '客服热线：400-6318-669<br/>'+
+                '地址：湖南省长沙市雨花区万家丽中路华晨世纪广场16F<br/>'+
+                '客服热线：400-041-8868<br/>'+
                 '</div>',
         offset: new AMap.Pixel(0, -30)
       });
-      infowindow.open(map,[120.429427,30.950068]);
+      infowindow.open(map,[113.035361,28.174006]);
     })
     AMap.plugin(['AMap.ToolBar','AMap.Scale'],function(){
         var toolBar = new AMap.ToolBar();
