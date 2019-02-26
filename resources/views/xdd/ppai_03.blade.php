@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-苏州九牧管业科技有限公司-宝士特-品牌理念-
+湖南响当当九牧管业有限公司-宝士特-品牌理念-
 </title>
 <script type="text/javascript" src="/xdd/Scripts/jquery-1.8.3.min.js"></script>
 <script>
@@ -162,8 +162,8 @@
     <tr>
       <td>
         <h3>unlimited pass to your health life</h3>
-        <h2>苏州九牧管业科技有限公司，传递给您无限健康生活</h2>
-        <br/>生命若水，无色无味，却有着令世间姹紫嫣红色都黯然的色泽，那便是它的澄澈明净；<br/>生命若水，无形无态，却有着令万物都望尘莫及的气质，那便是它的灵动顺畅；<br/>生命若水，更是一种聪睿的心智，一种的绝美的生存方式……<br/>生命与水，源于水，浓于水，溶于水；<br/>纯净健康的水，让生命更精彩、更鲜活；<br/>苏州九牧管业科技有限公司，绿色科技演绎，传递生命之水，让亿万生命享受健康之源!<br/><br/><strong>企业目标：</strong>打造成世界一流的品牌及企业<br/><strong>企业理念：</strong>重质量、 守信誉 、创品牌 、求发展<br/><strong>经营理念：</strong>以人才和技术为基础，创造最佳产品和服务，让客户满意，共建双赢<br/><strong>服务理念：</strong>全心全力、尽心尽职<br/><strong>质量理念：</strong>高标准、精细化、零缺陷，优秀的产品是优秀的人干出来的<br/><strong>人才理念：</strong>人人是人才，赛马不相马<br/><strong>市场理念：</strong>只有淡季的思想，没有淡季的市场；卖信誉不是卖产品；肯定自我，创造市场<br/><strong>营销理念：</strong>要卖好产品 先做好人品
+        <h2>湖南响当当九牧管业有限公司，传递给您无限健康生活</h2>
+        <br/>生命若水，无色无味，却有着令世间姹紫嫣红色都黯然的色泽，那便是它的澄澈明净；<br/>生命若水，无形无态，却有着令万物都望尘莫及的气质，那便是它的灵动顺畅；<br/>生命若水，更是一种聪睿的心智，一种的绝美的生存方式……<br/>生命与水，源于水，浓于水，溶于水；<br/>纯净健康的水，让生命更精彩、更鲜活；<br/>湖南响当当九牧管业有限公司，绿色科技演绎，传递生命之水，让亿万生命享受健康之源!<br/><br/><strong>企业目标：</strong>打造成世界一流的品牌及企业<br/><strong>企业理念：</strong>重质量、 守信誉 、创品牌 、求发展<br/><strong>经营理念：</strong>以人才和技术为基础，创造最佳产品和服务，让客户满意，共建双赢<br/><strong>服务理念：</strong>全心全力、尽心尽职<br/><strong>质量理念：</strong>高标准、精细化、零缺陷，优秀的产品是优秀的人干出来的<br/><strong>人才理念：</strong>人人是人才，赛马不相马<br/><strong>市场理念：</strong>只有淡季的思想，没有淡季的市场；卖信誉不是卖产品；肯定自我，创造市场<br/><strong>营销理念：</strong>要卖好产品 先做好人品
       </td>
       <td width="380">
         <img src="/xdd/images/about_pic2.jpg" alt=""/>
@@ -185,9 +185,9 @@
   <dl>
     <dd class="fl" style="margin-top:10px;"><img src="/xdd/images/logo2.jpg"/></dd>
     <dd class="fr text_r">
-        Copyright &copy; 2016 苏州九牧管业科技有限公司 All Rights Reserved
+        Copyright &copy; 2016 湖南响当当九牧管业有限公司 All Rights Reserved
     <br/>
-江苏省苏州市七都临湖开发区
+湖南省长沙市雨花区万家丽中路华晨世纪广场16F
     </dd>
   </dl>
   <div class="clear">

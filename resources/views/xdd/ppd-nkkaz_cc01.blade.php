@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-苏州九牧管业科技有限公司-宝士特-联系我们-
+湖南响当当九牧管业有限公司-宝士特-联系我们-
 </title>
 <script type="text/javascript" src="/xdd/Scripts/jquery-1.8.3.min.js"></script>
 <script>
@@ -162,7 +162,7 @@
       </td>
       <td>
         无论您在何时何地，有需要我们，只需拨打全国统一服务热线：<strong>400-6318-669</strong>，我们就近服务网点立即为您服务，剩下的事都由我们来搞定。您再也不必为记错电话、当地服务电话的变更而烦恼了。<br/><br/>
-        <h2>苏州九牧管业科技有限公司</h2>
+        <h2>湖南响当当九牧管业有限公司</h2>
         <ul>
           <li>地址：江苏省苏州市吴江区七都镇临湖开发区</li>
           <li>邮编：215234</li>
@@ -200,9 +200,9 @@
   <dl>
     <dd class="fl" style="margin-top:10px;"><img src="/xdd/images/logo2.jpg"/></dd>
     <dd class="fr text_r">
-        Copyright &copy; 2016 苏州九牧管业科技有限公司 All Rights Reserved
+        Copyright &copy; 2016 湖南响当当九牧管业有限公司 All Rights Reserved
     <br/>
-江苏省苏州市七都临湖开发区
+湖南省长沙市雨花区万家丽中路华晨世纪广场16F
     </dd>
   </dl>
   <div class="clear">

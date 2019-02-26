@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-苏州九牧管业科技有限公司-宝士特-品牌服务-
+湖南响当当九牧管业有限公司-宝士特-品牌服务-
 </title>
 <script type="text/javascript" src="/xdd/Scripts/jquery-1.8.3.min.js"></script>
 <script>
@@ -164,7 +164,7 @@
       <h2>        全程顾问式服务系统    </h2>
       <h3>We always pay attention to customer</h3>
     </div>
-        　　无论售前、售中、售后，苏州九牧管业科技有限公司时刻关注顾客，为顾客所想，<br/>        紧密无缝的服务体系保证在第一时间了解顾客的需求，强大的执行力则确保第一时间满足顾客的需求。<br/>        即使是顾客自身尚未发现的潜在需求，我们也已先行一步，让顾客的生活更无忧。
+        　　无论售前、售中、售后，湖南响当当九牧管业有限公司时刻关注顾客，为顾客所想，<br/>        紧密无缝的服务体系保证在第一时间了解顾客的需求，强大的执行力则确保第一时间满足顾客的需求。<br/>        即使是顾客自身尚未发现的潜在需求，我们也已先行一步，让顾客的生活更无忧。
   </div>
   <div class="con">
     <br/>
@@ -227,9 +227,9 @@
   <dl>
     <dd class="fl" style="margin-top:10px;"><img src="/xdd/images/logo2.jpg"/></dd>
     <dd class="fr text_r">
-        Copyright &copy; 2016 苏州九牧管业科技有限公司 All Rights Reserved
+        Copyright &copy; 2016 湖南响当当九牧管业有限公司 All Rights Reserved
     <br/>
-江苏省苏州市七都临湖开发区
+湖南省长沙市雨花区万家丽中路华晨世纪广场16F
     </dd>
   </dl>
   <div class="clear">

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-苏州九牧管业科技有限公司-宝士特
+湖南响当当九牧管业有限公司-宝士特
 </title>
 <script type="text/javascript" src="/xdd/Scripts/jquery-1.8.3.min.js"></script>
 <script>
@@ -254,9 +254,9 @@ $(document).ready(function(){
       <img src="/xdd/images/logo1.png" alt="宝士特，苏州名牌，中国管业十大产品">
       </dd>
       <dd class="fr text_r">
-    Copyright © 2016 苏州九牧管业科技有限公司 All Rights Reserved
+    Copyright © 2016 湖南响当当九牧管业有限公司 All Rights Reserved
       <br>
-      江苏省苏州市七都临湖开发区
+      湖南省长沙市雨花区万家丽中路华晨世纪广场16F
       </dd>
       <div class="clear">
       </div>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-苏州九牧管业科技有限公司-宝士特-品牌动态-
+湖南响当当九牧管业有限公司-宝士特-品牌动态-
 </title>
 <script type="text/javascript" src="/xdd/Scripts/jquery-1.8.3.min.js"></script>
 <script>
@@ -199,8 +199,8 @@
       </li>
       <li>
       <dl>
-        <a href='#' title='8月6日苏州九牧管业科技有限公司全体员工到浙江桐庐二日游'><dd class='date1'>18</dd><dd class='tit3'>2013/08
-        <h3>8月6日苏州九牧管业科技有限公司全体员工到浙江桐庐二…</h3>
+        <a href='#' title='8月6日湖南响当当九牧管业有限公司全体员工到浙江桐庐二日游'><dd class='date1'>18</dd><dd class='tit3'>2013/08
+        <h3>8月6日湖南响当当九牧管业有限公司全体员工到浙江桐庐二…</h3>
         </dd></a>
       </dl>
       </li>
@@ -244,9 +244,9 @@
     <dl>
       <dd class="fl" style="margin-top:10px;"><img src="/xdd/images/logo2.jpg"/></dd>
       <dd class="fr text_r">
-        Copyright &copy; 2016 苏州九牧管业科技有限公司 All Rights Reserved
+        Copyright &copy; 2016 湖南响当当九牧管业有限公司 All Rights Reserved
       <br/>
-江苏省苏州市七都临湖开发区
+湖南省长沙市雨花区万家丽中路华晨世纪广场16F
       </dd>
     </dl>
     <div class="clear">
