@@ -67,3 +67,5 @@ Route::get('/caseone', function () { return view('xdd.ppd-nkkaces_02'); });
 
 Route::get('/contactus', function () { return view('xdd.ppd-nkkaz_cc01'); });
 Route::get('/contactusone', function () { return view('xdd.ppd-nkkaz_cc02'); });
+
+Route::get('/securitycode', function () { return view('xdd.ppd-nkkaz_securitycode'); });
