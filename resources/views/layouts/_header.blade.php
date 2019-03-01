@@ -22,8 +22,8 @@
               {{ Auth::user()->name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="">{{ __('Personal Center') }}</a>
-              <a class="dropdown-item" href="">{{ __('Editing materials') }}</a>
+              <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">{{ __('Personal Center') }}</a>
+              <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">{{ __('Editing materials') }}</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" id="logout" href="#">
                 <form action="{{ route('logout') }}" method="POST">
