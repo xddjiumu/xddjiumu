@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
   <div class="container">
     <!-- Branding Image -->
-    <a class="navbar-brand " href="{{ url('/') }}">{{ __('Abbreviation') }}</a>
+    <a class="navbar-brand " href="{{ url('/') }}">{{ __('local Abbreviation') }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,13 +22,13 @@
               {{ Auth::user()->name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">{{ __('Personal Center') }}</a>
-              <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">{{ __('Editing materials') }}</a>
+              <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">{{ __('local Personal Center') }}</a>
+              <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">{{ __('local Editing materials') }}</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" id="logout" href="#">
                 <form action="{{ route('logout') }}" method="POST">
                   {{ csrf_field() }}
-                  <button class="btn btn-block btn-danger" type="submit" name="button">{{ __('Sign out') }}</button>
+                  <button class="btn btn-block btn-danger" type="submit" name="button">{{ __('local Sign out') }}</button>
                 </form>
               </a>
             </div>

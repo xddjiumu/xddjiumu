@@ -62,16 +62,16 @@
                         </div>
 
                         <div class="form-group row">
-                          <label for="captcha" class="col-md-4 col-form-label text-md-right">{{ __('Verification Code') }}</label>
+                          <label for="captcha" class="col-md-4 col-form-label text-md-right">{{ __('local Verification Code') }}</label>
 
                           <div class="col-md-6">
                             <input id="captcha" class="form-control{{ $errors->has('captcha') ? ' is-invalid' : '' }}" name="captcha" required>
 
-                            <img class="thumbnail captcha mt-3 mb-2" src="{{ captcha_src('flat') }}" onclick="this.src='/captcha/flat?'+Math.random()" title="{{ __('getVerification Code') }}">
+                            <img class="thumbnail captcha mt-3 mb-2" src="{{ captcha_src('flat') }}" onclick="this.src='/captcha/flat?'+Math.random()" title="{{ __('local getVerification Code') }}">
 
                             @if ($errors->has('captcha'))
                               <span class="invalid-feedback" role="alert">
-                                <strong>{{ $errors->first('captcha') }}</strong>
+                                <strong>{{ __($errors->first('captcha')) }}</strong>
                               </span>
                             @endif
                           </div>

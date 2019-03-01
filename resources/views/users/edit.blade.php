@@ -8,7 +8,7 @@
     <div class="card">
       <div class="card-header">
         <h4>
-          <i class="glyphicon glyphicon-edit"></i>{{ __('Editing Personal Data') }}
+          <i class="glyphicon glyphicon-edit"></i>{{ __('local Editing Personal Data') }}
         </h4>
       </div>
 
@@ -20,19 +20,19 @@
           @include('shared._error')
 
           <div class="form-group">
-            <label for="name-field">{{ __('User name') }}</label>
+            <label for="name-field">{{ __('local User name') }}</label>
             <input class="form-control" type="text" name="name" id="name-field" value="{{ old('name', $user->name) }}" />
           </div>
           <div class="form-group">
-            <label for="email-field">{{ __('Mail box') }}</label>
+            <label for="email-field">{{ __('local Mail box') }}</label>
             <input class="form-control" type="text" name="email" id="email-field" value="{{ old('email', $user->email) }}" />
           </div>
           <div class="form-group">
-            <label for="introduction-field">{{ __('Personal profile') }}</label>
+            <label for="introduction-field">{{ __('local Personal profile') }}</label>
             <textarea name="introduction" id="introduction-field" class="form-control" rows="3">{{ old('introduction', $user->introduction) }}</textarea>
           </div>
           <div class="well well-sm">
-            <button type="submit" class="btn btn-primary">{{ __('Preservation') }}</button>
+            <button type="submit" class="btn btn-primary">{{ __('local Preservation') }}</button>
           </div>
         </form>
       </div>
