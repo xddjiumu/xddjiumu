@@ -21,6 +21,8 @@
     "success Mailbox Verification Successful": " 邮箱验证成功 ^_^",
     "success Personal Data Update Successful!": " 个人资料更新成功！",
     "success Password Update Successful": " 密码更新成功，您已成功登录！",
+    "messages Head format": "头像必须是 jpeg, bmp, png, gif 格式的图片",
+    "messages Picture sharpness": "图片的清晰度不够，宽和高需要 208px 以上",
     "messages captcha required": "验证码不能为空",
     "messages captcha captcha": "请输入正确的验证码",
     "messages name required": "用户名不能为空。",
