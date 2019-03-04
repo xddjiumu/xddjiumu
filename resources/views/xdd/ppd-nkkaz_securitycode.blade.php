@@ -3,8 +3,8 @@
 <html lang="ch" manifest="">
 <head>
 <title>二维码查询系统</title>
-<meta name="keywords" content="关键词">
-<meta name="description" content="描述">
+<meta name="description" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
+<meta name="keywords" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
 <meta charset="utf-8"/>
 <meta name="apple-touch-fullscreen" content="YES"/>
 <meta name="format-detection" content="telephone=no"/>

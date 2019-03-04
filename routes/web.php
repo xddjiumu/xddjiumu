@@ -65,7 +65,9 @@ Route::get('/cuserviceflo', function () { return view('xdd.ppd-nkefu_03'); });
 Route::get('/case', function () { return view('xdd.ppd-nkkaces_01'); });
 Route::get('/caseone', function () { return view('xdd.ppd-nkkaces_02'); });
 
-Route::get('/contactus', function () { return view('xdd.ppd-nkkaz_cc01'); });
+Route::resource('contactus', 'ContactusController', ['only' => ['index', 'store']]);
+
+
 Route::get('/contactusone', function () { return view('xdd.ppd-nkkaz_cc02'); });
 
 Route::get('/securitycode', function () { return view('xdd.ppd-nkkaz_securitycode'); });

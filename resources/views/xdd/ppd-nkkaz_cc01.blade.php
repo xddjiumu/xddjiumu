@@ -3,8 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-湖南响当当九牧管业有限公司-宝士特-联系我们-
+九牧管业--湖南响当当九牧管业有限公司-联系我们-
 </title>
+<meta name="description" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
+<meta name="keywords" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <script type="text/javascript" src="/xdd/Scripts/jquery-1.8.3.min.js"></script>
 <script>
     $(function () {
@@ -154,6 +157,15 @@
 .con li{float:left;width:50%;line-height:2.5em;}
   </style>
   <div class="con">
+@foreach (['danger', 'warning', 'success', 'info'] as $msg)
+  @if(session()->has($msg))
+    <div class="flash-message">
+      <p class="alert alert-{{ $msg }}">
+        {{ __(session()->get($msg)) }}
+      </p>
+    </div>
+  @endif
+@endforeach
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tbody>
     <tr>
@@ -177,12 +189,36 @@
   </div>
   <div class="mes_form mtop">
     <ul>
-      <form method="post" action="contactsave.asp">
-        <li><span>联系人：</span><input name="mlinkman" type="text" class="tx"></li>
-        <li style="margin:0 40px;"><span>手　机：</span><input name="mmobile" type="text" class="tx"></li>
-        <li><span>邮　箱：</span><input name="memail" type="text" class="tx"></li>
-        <li style="clear:both;margin:20px 0;"><span>内　容：</span><textarea name="mcontent" cols="" rows="" class="tarea"></textarea></li>
-        <li style="clear:both;text-align:center;">　　　<input name="" type="submit" class="btn a" value="提交"><input name="" type="reset" class="btn b" value="重置"></li>
+      <style type="text/css">
+        .errorskey{color: red;padding-left: 56px;}
+        .alert-success{text-align: center; font-size: 30px; height: 80px; color: #F60;text-shadow: 2px 2px 2px #999;} 
+      </style>
+      <form method="post" action="{{ route('contactus.store') }}">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <li>
+          <span>联系人：</span>
+          <input name="name" type="text" class="tx" value="{{ old('name') }}">
+          <p class="errorskey">@if ($errors->has('name')){{ $errors->first('name')}}@endif</p>
+        </li>
+        <li style="margin:0 40px;">
+          <span>手　机：</span>
+          <input name="mobile" type="text" class="tx" value="{{ old('mobile') }}" >
+          <p class="errorskey">@if ($errors->has('mobile')){{ $errors->first('mobile')}}@endif</p>
+        </li>
+        <li>
+          <span>邮　箱：</span>
+          <input name="email" type="text" class="tx" value="{{ old('email') }}">
+          <p class="errorskey">@if ($errors->has('email')){{ $errors->first('email')}}@endif</p>
+        </li>
+        <li style="clear:both;margin:20px 0;">
+          <span>内　容：</span>
+          <textarea name="message" cols="" rows="" class="tarea"></textarea>
+          <p class="errorskey">@if ($errors->has('message')){{ $errors->first('message')}}@endif</p>
+        </li>
+        <li style="clear:both;text-align:center;">
+          <input name="" type="submit" class="btn a" value="提交">
+          <input name="" type="reset" class="btn b" value="重置">
+        </li>
       </form>
     </ul>
   </div>

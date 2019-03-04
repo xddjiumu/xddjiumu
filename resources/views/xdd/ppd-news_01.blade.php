@@ -3,8 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-湖南响当当九牧管业有限公司-宝士特-品牌动态-
+九牧管业--湖南响当当九牧管业有限公司-品牌动态-
 </title>
+<meta name="description" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
+<meta name="keywords" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
 <script type="text/javascript" src="/xdd/Scripts/jquery-1.8.3.min.js"></script>
 <script>
     $(function () {
