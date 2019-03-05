@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\Models\Contactus;
+use App\Models\Topic;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Form;
@@ -10,7 +10,7 @@ use Encore\Admin\Grid;
 use Encore\Admin\Layout\Content;
 use Encore\Admin\Show;
 
-class ContactusController extends Controller
+class TopicController extends Controller
 {
     use HasResourceActions;
 
@@ -23,8 +23,8 @@ class ContactusController extends Controller
     public function index(Content $content)
     {
         return $content
-            ->header('用户留言')
-            ->description('description_当有用户需要帮肋并能处理时请解决并记录下来')
+            ->header('站内文章')
+            ->description('description_新闻资讯,常见问题')
             ->body($this->grid());
     }
 
@@ -38,8 +38,8 @@ class ContactusController extends Controller
     public function show($id, Content $content)
     {
         return $content
-            ->header('留言详细')
-            ->description('description_当有用户需要帮肋并能处理时请解决并记录下来')
+            ->header('Detail')
+            ->description('description')
             ->body($this->detail($id));
     }
 
@@ -53,7 +53,7 @@ class ContactusController extends Controller
     public function edit($id, Content $content)
     {
         return $content
-            ->header('Edit')
+            ->header('编辑文章')
             ->description('description')
             ->body($this->form()->edit($id));
     }
@@ -67,8 +67,8 @@ class ContactusController extends Controller
     public function create(Content $content)
     {
         return $content
-            ->header('Create')
-            ->description('description')
+            ->header('创建文章')
+            ->description('description_创建_新闻资讯,常见问题')
             ->body($this->form());
     }
 
@@ -79,28 +79,18 @@ class ContactusController extends Controller
      */
     protected function grid()
     {
-        $grid = new Grid(new Contactus);
+        $grid = new Grid(new Topic);
 
         $grid->id('Id');
-        $grid->name('联系人');
-        $grid->email('邮箱');
-        $grid->mobile('电话');
-        $grid->message('留言信息或帮助');
-        
-        $grid->actions(function ($actions) {
-            // 不在每一行后面展示查看按钮
-            // 不在每一行后面展示删除按钮
-            $actions->disableDelete();
-            // 不在每一行后面展示编辑按钮
-            $actions->disableEdit();
-        });
-
-        $grid->tools(function ($tools) {
-            // 禁用批量删除按钮
-            $tools->batch(function ($batch) {
-                $batch->disableDelete();
-            });
-        });
+        $grid->title('标题');
+        $grid->body('内容');
+        $grid->category_id('分类');
+        $grid->view_count('查看次数');
+        $grid->order('排序');
+        $grid->excerpt('摘录');
+        $grid->slug('SEO');
+        $grid->created_at('创建时间');
+        $grid->updated_at('更新时间');
 
         return $grid;
     }
@@ -113,13 +103,18 @@ class ContactusController extends Controller
      */
     protected function detail($id)
     {
-        $show = new Show(Contactus::findOrFail($id));
+        $show = new Show(Topic::findOrFail($id));
 
         $show->id('Id');
-        $show->name('联系人');
-        $show->email('邮箱');
-        $show->mobile('电话');
-        $show->message('留言信息或帮助');
+        $show->title('标题');
+        $show->body('内容');
+        $show->category_id('Category id');
+        $show->view_count('View count');
+        $show->order('排序');
+        $show->excerpt('Excerpt');
+        $show->slug('SEO');
+        $show->created_at('Created at');
+        $show->updated_at('Updated at');
 
         return $show;
     }
@@ -127,16 +122,19 @@ class ContactusController extends Controller
     /**
      * Make a form builder.
      *
-     * @return form
+     * @return Form
      */
     protected function form()
     {
-        $form = new Form(new Contactus);
+        $form = new Form(new Topic);
 
-        $form->text('name', 'Name');
-        $form->email('email', 'Email');
-        $form->mobile('mobile', 'Mobile');
-        $form->text('message', 'Message');
+        $form->text('title', '标题')->rules('required');
+        $form->editor('body', '内容')->rules('required');
+        $form->number('category_id', '分类类型');
+        $form->number('view_count', '查看次数');
+        $form->number('order', '排序');
+        $form->textarea('excerpt', '摘录');
+        $form->text('slug', 'SEO');
 
         return $form;
     }
