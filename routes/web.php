@@ -71,3 +71,5 @@ Route::resource('contactus', 'ContactusController', ['only' => ['index', 'store'
 Route::get('/contactusone', function () { return view('xdd.ppd-nkkaz_cc02'); });
 
 Route::get('/securitycode', function () { return view('xdd.ppd-nkkaz_securitycode'); });
+
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
