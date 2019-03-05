@@ -28,7 +28,7 @@
       <a href="/" title="首页"><img src="/xdd/images/logo.png"/></a>
     </div>
     <div class="down">
-      <a href="http://dl.jomugy.com/sgb/index.php?s=/Admin/Xkuser/downloadphoto" target="_blank">管路图下载</a>
+      <!-- <a href="http://dl.jomugy.com/sgb/index.php?s=/Admin/Xkuser/downloadphoto" target="_blank">管路图下载</a> -->
     </div>
     <div class="logo1">
       <img src="/xdd/images/qr.png">
@@ -117,7 +117,7 @@
 <div class="top_bg8">
   <div class="container">
     <div class="location">
-      <span><a href='index.asp' title='首页'>首页</a>&nbsp;&gt;&nbsp;联系我们&nbsp;&gt;&nbsp;联系我们</span>
+      <span><a href='/' title='首页'>首页</a>&nbsp;&gt;&nbsp;联系我们&nbsp;&gt;&nbsp;联系我们</span>
     </div>
     <div class="p_l">
       <ul>
