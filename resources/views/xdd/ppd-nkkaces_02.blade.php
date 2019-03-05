@@ -221,7 +221,7 @@
 <div class='clear' style='height:20px;'>
 </div>
 <div class='page'>
-  <span class='current'>1</span>
+  <!-- <span class='current'>1</span> -->
 </div>
 <div class="clear">
 </div>
