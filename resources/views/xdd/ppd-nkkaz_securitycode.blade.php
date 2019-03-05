@@ -5,6 +5,7 @@
 <title>二维码查询系统</title>
 <meta name="description" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
 <meta name="keywords" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <meta charset="utf-8"/>
 <meta name="apple-touch-fullscreen" content="YES"/>
 <meta name="format-detection" content="telephone=no"/>
