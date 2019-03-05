@@ -6,7 +6,7 @@
 九牧管业--湖南响当当九牧管业有限公司-常见问题-
 </title>
 <meta name="description" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
-<meta name="keywords" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
+<meta name="keywords" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司{{ $topic->excerpt }}" />
 <script type="text/javascript" src="/xdd/Scripts/jquery-1.8.3.min.js"></script>
 <script>
     $(function () {
