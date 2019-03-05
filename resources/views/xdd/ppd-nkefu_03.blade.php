@@ -150,85 +150,46 @@
     </script>
   <script type="text/javascript" src="/xdd/Scripts/jquery.fancybox.pack.js"></script>
   <link rel="stylesheet" type="text/css" href="/xdd/style/fancybox.css"/>
+  <div class="container pt">
   <div class='nlist'>
-    <ul>
+@if (count($topics))
+  <ul>
+    @foreach ($topics as $topic)
       <li>
-      <dl>
-        <a href='#' title='PPR管道安装的质量通病及防治措施'><dd class='date1'>30</dd><dd class='tit3'>2013/12
-        <h3>PPR管道安装的质量通病及防治措施</h3>
-        </dd></a>
-      </dl>
+        <dl>
+          <a href="{{ route('topics.show', [$topic->id]) }}" title='{{ $topic->title }}'>
+            <dd class='date1'>{{ $topic->updated_at->format("d") }}</dd>
+            <dd class='tit3'>{{ $topic->updated_at->format("Y/m") }}
+              <h3>{{ $topic->title }}</h3> {{ $topic->reply_count }}
+            </dd>
+          </a>
+        </dl>
       </li>
-      <li>
-      <dl>
-        <a href='#' title='地源热泵供热供冷技术综合利用方法'><dd class='date1'>04</dd><dd class='tit3'>2012/03
-        <h3>地源热泵供热供冷技术综合利用方法</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='准确掌握和认识交联聚乙烯（PE-X）与耐热聚乙烯(PE-RT)管材之物理力学性能'><dd class='date1'>04</dd><dd class='tit3'>2012/03
-        <h3>准确掌握和认识交联聚乙烯（PE-X）与耐热聚乙烯(PE-RT)管…</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='PPR水管常见问题'><dd class='date1'>03</dd><dd class='tit3'>2012/03
-        <h3>PPR水管常见问题</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='如何选择地暖管'><dd class='date1'>03</dd><dd class='tit3'>2012/03
-        <h3>如何选择地暖管</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='家装时如何选择给水管'><dd class='date1'>02</dd><dd class='tit3'>2012/03
-        <h3>家装时如何选择给水管</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='地板采暖的常见问题及如何进行温度控制'><dd class='date1'>02</dd><dd class='tit3'>2012/03
-        <h3>地板采暖的常见问题及如何进行温度控制</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='地暖进家需注意八大问题'><dd class='date1'>01</dd><dd class='tit3'>2012/03
-        <h3>地暖进家需注意八大问题</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='地暖验收七步 气压试验是关键'><dd class='date1'>01</dd><dd class='tit3'>2012/03
-        <h3>地暖验收七步&nbsp;气压试验是关键</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='地暖地板铺装的10大注意事项'><dd class='date1'>01</dd><dd class='tit3'>2012/03
-        <h3>地暖地板铺装的10大注意事项</h3>
-        </dd></a>
-      </dl>
-      </li>
-    </ul>
-    <div class='clear' style='height:20px;'>
-    </div>
-    <div class='page'>
-      <span class='current'>1</span>
-    </div>
+      @if ( ! $loop->last)
+        <hr>
+      @endif
+    @endforeach
+  </ul>
+@else
+  <div class="empty-block">暂无数据 ~_~ </div>
+@endif
+    <div class='clear' style='height:20px;'></div>
+
+
+    {!! $topics->render() !!}
+    <style type="text/css">
+      .pagination {display: inline-block; padding-left: 0; list-style: none; border-radius: 0.25rem;width: 100%; text-align: center;}
+      .pagination li {line-height: 35px; height: 35px; width: 35px!important;display: inline-block; float:initial!important;}
+      .pagination li:first-child {padding-left: 10px;}
+      .page-item.active .page-link {z-index: 1; color: #fff; background-color: #3490dc; border-color: #3490dc; }
+      .page-link {position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #3490dc; background-color: #fff; border: 1px solid #dee2e6; }
+      .page-item{clear: both;}
+      .tit3{width: 80%;}
+
+    </style>
   </div>
+  <div class="clear"></div>
+</div>
   <div class="clear">
   </div>
 </div>

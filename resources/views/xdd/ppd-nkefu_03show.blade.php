@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-九牧管业--湖南响当当九牧管业有限公司-品牌动态-
+九牧管业--湖南响当当九牧管业有限公司-常见问题-
 </title>
 <meta name="description" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
 <meta name="keywords" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
@@ -86,7 +86,7 @@
           <ul>
             <li><a href='/cuservice' title='品牌服务'>品牌服务</a></li>
             <li><a href='/cuserviceone' title='在线留言'>在线留言</a></li>
-            <li><a href='/cuserviceflo' title='常见问题'>常见问题</a></li>
+            <li class='/marketing'><a href='/cuserviceflo' title='常见问题'>常见问题</a></li>
           </ul>
         </div>
         </li>
@@ -113,93 +113,73 @@
   </div>
 </div>
 <script type="text/javascript">jQuery(".nav").slide({ type:"menu",  titCell:".m", targetCell:".sub",effect:"slideDown", delayTime:300, triggerTime:0,returnDefault:true  });  </script>
-<div class="top_bg4">
+<div class="top_bg6">
   <div class="container">
     <div class="location">
-      <span>
-        <a href='/' title='首页'>首页</a>&nbsp;&gt;&nbsp;
-        <a href='/news'>新闻中心</a>&nbsp;&gt;&nbsp;
-        @if ($category->id == 2)
-        <a href='/newsone'>行业资讯</a>
-        @else
-        <a href='/news'>品牌动态</a>
-        @endif
-        
-      </span>
+      <span><a href='index.asp' title='首页'>首页</a>&nbsp;&gt;&nbsp;客服中心&nbsp;&gt;&nbsp;常见问题</span>
     </div>
     <div class="p_l">
       <ul>
-        @if ($category->id == 2)
-        <li><a href='/news'>品牌动态</a></li>
-        <li class='current'><a href='/newsone'>行业资讯</a></li>
-        @else
-        <li class='current'><a href='/news'>品牌动态</a></li>
-        <li><a href='/newsone'>行业资讯</a></li>
-        @endif
+        <li><a href='/cuservice' title='品牌服务'>品牌服务</a></li>
+        <li><a href='/cuserviceone' title='在线留言'>在线留言</a></li>
+        <li class='current'><a href='/cuserviceflo' title='常见问题'>常见问题</a></li>
       </ul>
     </div>
   </div>
 </div>
-
 <div class="container pt">
-  <div class='nlist'>
-@if (count($topics))
-  <ul>
-    @foreach ($topics as $topic)
-      <li>
-        <dl>
-          <a href="{{ route('topics.show', [$topic->id]) }}" title='{{ $topic->title }}'>
-            <dd class='date1'>{{ $topic->updated_at->format("d") }}</dd>
-            <dd class='tit3'>{{ $topic->updated_at->format("Y/m") }}
-              <h3>{{ $topic->title }}</h3> {{ $topic->reply_count }}
-            </dd>
-          </a>
-        </dl>
-      </li>
-      @if ( ! $loop->last)
-        <hr>
-      @endif
-    @endforeach
-  </ul>
-@else
-  <div class="empty-block">暂无数据 ~_~ </div>
-@endif
-    <div class='clear' style='height:20px;'></div>
+  <script>
+            $(function(){
+               $(".pop").fancybox({
+                   'fitToView':false,
+                   'autoSize':false,
+                   'width'             : '960px',
+                   'height'             : '580px',
+                   'type'              : 'iframe',
+                   'padding'           : 20,
+                   'wrapCSS'      :'blue_wp',
+                   "iframe" : {
+                          scrolling : 'auto'
+                      }
+               });  
+            $(".fcbox").fancybox({
+                    openEffect  : 'none',
+                    closeEffect : 'none'
+                });
+                });
+    </script>
+  <script type="text/javascript" src="/xdd/Scripts/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/xdd/style/fancybox.css"/>
+  <div class="container pt">
+    <div class="newstit"><h1>{{ $topic->title }}</h1>发布日期：{{ $topic->updated_at }}</div>
+    <div class="ncon">{{ $topic->body }}</div>
 
-
-    {!! $topics->render() !!}
-    <style type="text/css">
-      .pagination {display: inline-block; padding-left: 0; list-style: none; border-radius: 0.25rem;width: 100%; text-align: center;}
-      .pagination li {line-height: 35px; height: 35px; width: 35px!important;display: inline-block; float:initial!important;}
-      .pagination li:first-child {padding-left: 10px;}
-      .page-item.active .page-link {z-index: 1; color: #fff; background-color: #3490dc; border-color: #3490dc; }
-      .page-link {position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #3490dc; background-color: #fff; border: 1px solid #dee2e6; }
-      .page-item{clear: both;}
-      .tit3{width: 80%;}
-
-    </style>
-  </div>
-  <div class="clear"></div>
+    <ul class="page1">
+      <!-- <li class="l1"><a href="newsview.asp?id=953" title="央视广告通知">上一页</a></li> -->
+    </ul>
+    <div class="clear"></div>
 </div>
-
-
+  <div class="clear">
+  </div>
+</div>
+</div>
 <div class="clear">
 </div>
 <div class="footer">
-  <div class="container">
-    <div class="clear a1">
-    </div>
-    <dl>
-      <dd class="fl" style="margin-top:10px;"><img src="/xdd/images/logo2.jpg"/></dd>
-      <dd class="fr text_r">
-        Copyright &copy; 2016 湖南响当当九牧管业有限公司 All Rights Reserved
-      <br/>
-湖南省长沙市雨花区万家丽中路华晨世纪广场16F
-      </dd>
-    </dl>
-    <div class="clear">
-    </div>
+<div class="container">
+  <div class="clear a1">
   </div>
+  <dl>
+    <dd class="fl" style="margin-top:10px;"><img src="/xdd/images/logo2.jpg"/></dd>
+    <dd class="fr text_r">
+        Copyright &copy; 2016 湖南响当当九牧管业有限公司 All Rights Reserved
+    <br/>
+湖南省长沙市雨花区万家丽中路华晨世纪广场16F
+    </dd>
+  </dl>
+  <div class="clear">
+  </div>
+</div>
 </div>
 </body>
 </html>

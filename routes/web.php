@@ -52,15 +52,20 @@ Route::get('/producf', function () { return view('xdd.ppcanp_04'); });
 
 Route::get('/solution', function () { return view('xdd.ppd-jjfa'); });
 
-Route::get('/news', function () { return view('xdd.ppd-news_01'); });
-Route::get('/newsone', function () { return view('xdd.ppd-news_02'); });
+Route::get('/news', 'TopicsController@news')->name('news');
+// Route::get('/news', function () { return view('xdd.ppd-news_01'); });
+
+
+Route::get('/newsone', 'TopicsController@newsone')->name('newsone');
+// Route::get('/newsone', function () { return view('xdd.ppd-news_02'); });
 
 Route::get('/marketing', function () { return view('xdd.ppd-ninter_01'); });
 Route::get('/marketingone', function () { return view('xdd.ppd-ninter_02'); });
 
 Route::get('/cuservice', function () { return view('xdd.ppd-nkefu_01'); });
 Route::get('/cuserviceone', function () { return view('xdd.ppd-nkefu_02'); });
-Route::get('/cuserviceflo', function () { return view('xdd.ppd-nkefu_03'); });
+// Route::get('/cuserviceflo', function () { return view('xdd.ppd-nkefu_03'); });
+Route::get('/cuserviceflo', 'TopicsController@cuserviceflo')->name('cuserviceflo');
 
 Route::get('/case', function () { return view('xdd.ppd-nkkaces_01'); });
 Route::get('/caseone', function () { return view('xdd.ppd-nkkaces_02'); });

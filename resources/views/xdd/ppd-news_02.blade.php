@@ -116,7 +116,11 @@
 <div class="top_bg4">
   <div class="container">
     <div class="location">
-      <span><a href='index.asp' title='首页'>首页</a>&nbsp;&gt;&nbsp;<a href='news.asp?sortid=43'>新闻中心</a>&nbsp;&gt;&nbsp;<a href='/newsone'>行业资讯</a></span>
+      <span>
+        <a href='/' title='首页'>首页</a>&nbsp;&gt;&nbsp;
+        <a href='/news'>新闻中心</a>&nbsp;&gt;&nbsp;
+        <a href='/newsone'>行业资讯</a>
+      </span>
     </div>
     <div class="p_l">
       <ul>
@@ -128,114 +132,43 @@
 </div>
 <div class="container pt">
   <div class='nlist'>
-    <ul>
+@if (count($topics))
+  <ul>
+    @foreach ($topics as $topic)
       <li>
-      <dl>
-        <a href='#' title='9月1日新广告法正式施行：再有这些词 罚款二十万起'><dd class='date1'>15</dd><dd class='tit3'>2015/09
-        <h3>9月1日新广告法正式施行：再有这些词&nbsp;罚款二十万起</h3>
-        </dd></a>
-      </dl>
+        <dl>
+          <a href="{{ route('topics.show', [$topic->id]) }}" title='{{ $topic->title }}'>
+            <dd class='date1'>{{ $topic->updated_at->format("d") }}</dd>
+            <dd class='tit3'>{{ $topic->updated_at->format("Y/m") }}
+              <h3>{{ $topic->title }}</h3> {{ $topic->reply_count }}
+            </dd>
+          </a>
+        </dl>
       </li>
-      <li>
-      <dl>
-        <a href='#' title='9/1颁布的广告法'><dd class='date1'>15</dd><dd class='tit3'>2015/09
-        <h3>9/1颁布的广告法</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='今后几年PVC管发展预测'><dd class='date1'>29</dd><dd class='tit3'>2014/07
-        <h3>今后几年PVC管发展预测</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='塑料管材为建材市场带来新市场'><dd class='date1'>18</dd><dd class='tit3'>2014/04
-        <h3>塑料管材为建材市场带来新市场</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='新型塑料管材发展速度逐渐加快'><dd class='date1'>10</dd><dd class='tit3'>2014/03
-        <h3>新型塑料管材发展速度逐渐加快</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='中小规模污水节能高效处理技术实现新突破 '><dd class='date1'>11</dd><dd class='tit3'>2014/01
-        <h3>中小规模污水节能高效处理技术实现新突破&nbsp;</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title=' ppr管件管材使用时要注意事项'><dd class='date1'>19</dd><dd class='tit3'>2013/12
-        <h3>&nbsp;PPR管件管材使用时要注意事项</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='原料波动 09年塑料管道指导价格频调'><dd class='date1'>10</dd><dd class='tit3'>2012/10
-        <h3>原料波动&nbsp;09年塑料管道指导价格频调</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='国内塑料管产品现状及未来发展'><dd class='date1'>30</dd><dd class='tit3'>2012/09
-        <h3>国内塑料管产品现状及未来发展</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='ppr管水管知识大全'><dd class='date1'>07</dd><dd class='tit3'>2012/08
-        <h3>ppr管水管知识大全</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='PVC供水管连接注意事项《用PVC胶连接》'><dd class='date1'>31</dd><dd class='tit3'>2012/07
-        <h3>PVC供水管连接注意事项《用PVC胶连接》</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='ppr管材应用水管的特点'><dd class='date1'>31</dd><dd class='tit3'>2012/07
-        <h3>ppr管材应用水管的特点</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='关于PPR管经常出现的问题的解答'><dd class='date1'>26</dd><dd class='tit3'>2012/07
-        <h3>关于PPR管经常出现的问题的解答</h3>
-        </dd></a>
-      </dl>
-      </li>
-      <li>
-      <dl>
-        <a href='#' title='怎样选择冷热PP-R水管'><dd class='date1'>26</dd><dd class='tit3'>2012/07
-        <h3>怎样选择冷热PP-R水管</h3>
-        </dd></a>
-      </dl>
-      </li>
-    </ul>
-    <div class='clear' style='height:20px;'>
-    </div>
-    <div class="page">
-  <span class="current">1</span><span><a href="#">2</a></span><span class="next"><a href="#" title="下一页"></a></span><span class="last"><a href="#" title="跳到第2页"></a></span>
-</div>
+      @if ( ! $loop->last)
+        <hr>
+      @endif
+    @endforeach
+  </ul>
+@else
+  <div class="empty-block">暂无数据 ~_~ </div>
+@endif
+    <div class='clear' style='height:20px;'></div>
+
+
+    {!! $topics->render() !!}
+    <style type="text/css">
+      .pagination {display: inline-block; padding-left: 0; list-style: none; border-radius: 0.25rem;width: 100%; text-align: center;}
+      .pagination li {line-height: 35px; height: 35px; width: 35px!important;display: inline-block; float:initial!important;}
+      .pagination li:first-child {padding-left: 10px;}
+      .page-item.active .page-link {z-index: 1; color: #fff; background-color: #3490dc; border-color: #3490dc; }
+      .page-link {position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #3490dc; background-color: #fff; border: 1px solid #dee2e6; }
+      .page-item{clear: both;}
+      .tit3{width: 80%;}
+
+    </style>
   </div>
-  <div class="clear">
-  </div>
+  <div class="clear"></div>
 </div>
 <div class="clear">
 </div>

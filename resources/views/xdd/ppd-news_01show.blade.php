@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>
-九牧管业--湖南响当当九牧管业有限公司-品牌动态-
+九牧管业--湖南响当当九牧管业有限公司-行业资讯-
 </title>
 <meta name="description" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
 <meta name="keywords" content="品质悦享生活、九牧管业、湖南响当当九牧管业有限公司" />
@@ -124,7 +124,6 @@
         @else
         <a href='/news'>品牌动态</a>
         @endif
-        
       </span>
     </div>
     <div class="p_l">
@@ -140,49 +139,15 @@
     </div>
   </div>
 </div>
-
 <div class="container pt">
-  <div class='nlist'>
-@if (count($topics))
-  <ul>
-    @foreach ($topics as $topic)
-      <li>
-        <dl>
-          <a href="{{ route('topics.show', [$topic->id]) }}" title='{{ $topic->title }}'>
-            <dd class='date1'>{{ $topic->updated_at->format("d") }}</dd>
-            <dd class='tit3'>{{ $topic->updated_at->format("Y/m") }}
-              <h3>{{ $topic->title }}</h3> {{ $topic->reply_count }}
-            </dd>
-          </a>
-        </dl>
-      </li>
-      @if ( ! $loop->last)
-        <hr>
-      @endif
-    @endforeach
-  </ul>
-@else
-  <div class="empty-block">暂无数据 ~_~ </div>
-@endif
-    <div class='clear' style='height:20px;'></div>
+    <div class="newstit"><h1>{{ $topic->title }}</h1>发布日期：{{ $topic->updated_at }}</div>
+    <div class="ncon">{{ $topic->body }}</div>
 
-
-    {!! $topics->render() !!}
-    <style type="text/css">
-      .pagination {display: inline-block; padding-left: 0; list-style: none; border-radius: 0.25rem;width: 100%; text-align: center;}
-      .pagination li {line-height: 35px; height: 35px; width: 35px!important;display: inline-block; float:initial!important;}
-      .pagination li:first-child {padding-left: 10px;}
-      .page-item.active .page-link {z-index: 1; color: #fff; background-color: #3490dc; border-color: #3490dc; }
-      .page-link {position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #3490dc; background-color: #fff; border: 1px solid #dee2e6; }
-      .page-item{clear: both;}
-      .tit3{width: 80%;}
-
-    </style>
-  </div>
-  <div class="clear"></div>
+    <ul class="page1">
+      <!-- <li class="l1"><a href="newsview.asp?id=953" title="央视广告通知">上一页</a></li> -->
+    </ul>
+    <div class="clear"></div>
 </div>
-
-
 <div class="clear">
 </div>
 <div class="footer">
