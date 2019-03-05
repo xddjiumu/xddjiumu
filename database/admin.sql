@@ -21,7 +21,7 @@
 
 LOCK TABLES `admin_menu` WRITE;
 /*!40000 ALTER TABLE `admin_menu` DISABLE KEYS */;
-INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,NULL,'2019-03-05 17:11:22'),(2,0,4,'系统管理','fa-tasks',NULL,NULL,NULL,'2019-03-05 17:49:36'),(3,2,5,'管理员','fa-users','auth/users',NULL,NULL,'2019-03-05 17:49:36'),(4,2,6,'角色','fa-user','auth/roles',NULL,NULL,'2019-03-05 17:49:36'),(5,2,7,'权限','fa-ban','auth/permissions',NULL,NULL,'2019-03-05 17:49:36'),(6,2,8,'菜单','fa-bars','auth/menu',NULL,NULL,'2019-03-05 17:49:36'),(7,2,9,'操作日志','fa-history','auth/logs',NULL,NULL,'2019-03-05 17:49:36'),(8,0,2,'用户管理','fa-users','/users',NULL,'2019-03-05 17:18:46','2019-03-05 17:19:03'),(9,0,3,'用户留言','fa-whatsapp','/contactus',NULL,'2019-03-05 17:49:28','2019-03-05 17:49:36');
+INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,NULL,'2019-03-05 17:11:22'),(2,0,5,'系统管理','fa-tasks',NULL,NULL,NULL,'2019-03-05 21:41:37'),(3,2,6,'管理员','fa-users','auth/users',NULL,NULL,'2019-03-05 21:41:37'),(4,2,7,'角色','fa-user','auth/roles',NULL,NULL,'2019-03-05 21:41:37'),(5,2,8,'权限','fa-ban','auth/permissions',NULL,NULL,'2019-03-05 21:41:37'),(6,2,9,'菜单','fa-bars','auth/menu',NULL,NULL,'2019-03-05 21:41:37'),(7,2,10,'操作日志','fa-history','auth/logs',NULL,NULL,'2019-03-05 21:41:37'),(8,0,2,'用户管理','fa-users','/users',NULL,'2019-03-05 17:18:46','2019-03-05 17:19:03'),(9,0,4,'用户留言','fa-whatsapp','/contactus',NULL,'2019-03-05 17:49:28','2019-03-05 21:41:37'),(10,0,3,'文章发布','fa-clipboard','/topic',NULL,'2019-03-05 21:41:31','2019-03-05 21:41:37');
 /*!40000 ALTER TABLE `admin_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-03-05 10:06:58
+-- Dump completed on 2019-03-05 14:33:20
