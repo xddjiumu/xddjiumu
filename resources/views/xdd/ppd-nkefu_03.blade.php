@@ -202,11 +202,12 @@
   <div class="clear a1">
   </div>
   <dl>
-    <dd class="fl" style="margin-top:10px;"><img src="/xdd/images/logo2.jpg"/></dd>
+    <dd class="fl" style="margin-top:10px;"></dd>
     <dd class="fr text_r">
         Copyright &copy; 2016 湖南响当当九牧管业有限公司 All Rights Reserved
     <br/>
 湖南省长沙市雨花区万家丽中路华晨世纪广场16F
+<br>生产地址:浙江省杭州市临杭工业园区
     </dd>
   </dl>
   <div class="clear">

@@ -133,36 +133,21 @@ $(document).ready(function(){
   <div class="scrollbox">
     <div id="scrollDiv">
       <ul>
-        <li><span class='li44'><a href='/news' title='品牌动态'>品牌动态</a></span><span class='li2'>[2016/04/23]</span><a href='newsview.asp?id=956' title='2016宿淮徐区域“携手共赢、共创辉煌”订货交流会成功举办'>
-        <h3>2016宿淮徐区域“携手共赢、共创辉煌”订货交流会成功举办</h3>
-        </a></li>
-        <li><span class='li45'><a href='/newsone' title='行业资讯'>行业资讯</a></span><span class='li2'>[2015/09/15]</span><a href='newsview.asp?id=955' title='9月1日新广告法正式施行：再有这些词 罚款二十万起'>
-        <h3>9月1日新广告法正式施行：再有这些词 罚款二十万起</h3>
-        </a></li>
-        <li><span class='li45'><a href='/newsone' title='行业资讯'>行业资讯</a></span><span class='li2'>[2015/09/15]</span><a href='newsview.asp?id=954' title='9/1颁布的广告法'>
-        <h3>9/1颁布的广告法</h3>
-        </a></li>
-        <li><span class='li44'><a href='/news' title='品牌动态'>品牌动态</a></span><span class='li2'>[2015/03/29]</span><a href='newsview.asp?id=953' title='央视广告通知'>
-        <h3>央视广告通知</h3>
-        </a></li>
-        <li><span class='li44'><a href='/news' title='品牌动态'>品牌动态</a></span><span class='li2'>[2015/03/18]</span><a href='newsview.asp?id=952' title='2015/3/30至2015/6/21中央电视台广告预播收视通知'>
-        <h3>2015/3/30至2015/6/21中央电视台广告预播收视通知</h3>
-        </a></li>
-        <li><span class='li44'><a href='/news' title='品牌动态'>品牌动态</a></span><span class='li2'>[2014/11/15]</span><a href='newsview.asp?id=951' title='公司管件防伪码新添加二维码扫描功能'>
-        <h3>公司管件防伪码新添加二维码扫描功能</h3>
-        </a></li>
-        <li><span class='li44'><a href='/news' title='品牌动态'>品牌动态</a></span><span class='li2'>[2014/11/03]</span><a href='newsview.asp?id=950' title='带皮圈管堵上市啦！'>
-        <h3>带皮圈管堵上市啦！</h3>
-        </a></li>
-        <li><span class='li44'><a href='/news' title='品牌动态'>品牌动态</a></span><span class='li2'>[2014/09/28]</span><a href='newsview.asp?id=949' title='关于公司防伪升级'>
-        <h3>关于公司防伪升级</h3>
-        </a></li>
-        <li><span class='li44'><a href='/news' title='品牌动态'>品牌动态</a></span><span class='li2'>[2014/09/02]</span><a href='newsview.asp?id=948' title='关于公司防伪系统的全面升级 '>
-        <h3>关于公司防伪系统的全面升级 </h3>
-        </a></li>
-        <li><span class='li44'><a href='/news' title='品牌动态'>品牌动态</a></span><span class='li2'>[2014/08/23]</span><a href='newsview.asp?id=947' title='关于PVC管件更新换代通知'>
-        <h3>关于PVC管件更新换代通知</h3>
-        </a></li>
+        <li>
+          <span class='li44'>
+            @if ($topics->category_id == 1)
+            <a href="/news">品牌动态</a>
+            @elseif($topics->category_id == 2)
+            <a href="/newsone">行业资讯</a>
+            @else
+            <a href="/cuserviceflo" title="常见问题">常见问题</a>
+            @endif
+          </span>
+              <span class='li2'>[ {{ $topics->updated_at->format("Y/m/d") }} ]</span>
+              <a href="{{ route('topics.show', [$topics->id]) }}" title='{{ $topics->title }}'>
+            <h3>{{ $topics['title'] }}</h3>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="scroltit">
@@ -260,6 +245,7 @@ $(document).ready(function(){
     Copyright © 2016 湖南响当当九牧管业有限公司 All Rights Reserved
       <br>
       湖南省长沙市雨花区万家丽中路华晨世纪广场16F
+      <br>生产地址:浙江省杭州市临杭工业园区
       </dd>
       <div class="clear">
       </div>

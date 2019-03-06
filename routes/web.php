@@ -35,7 +35,8 @@ Route::get('email/resend', 'Auth\VerificationController@resend')->name('verifica
 
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 
-Route::get('/', function () { return view('xdd.index'); });
+Route::get('/', 'PagesController@index');
+
 Route::get('/brand', function () { return view('xdd.ppai_01'); });
 Route::get('/about', function () { return view('xdd.ppai_02'); });
 Route::get('/idea', function () { return view('xdd.ppai_03'); });
@@ -63,15 +64,18 @@ Route::get('/marketing', function () { return view('xdd.ppd-ninter_01'); });
 Route::get('/marketingone', function () { return view('xdd.ppd-ninter_02'); });
 
 Route::get('/cuservice', function () { return view('xdd.ppd-nkefu_01'); });
-Route::get('/cuserviceone', function () { return view('xdd.ppd-nkefu_02'); });
+
+
+
 // Route::get('/cuserviceflo', function () { return view('xdd.ppd-nkefu_03'); });
 Route::get('/cuserviceflo', 'TopicsController@cuserviceflo')->name('cuserviceflo');
 
 Route::get('/case', function () { return view('xdd.ppd-nkkaces_01'); });
 Route::get('/caseone', function () { return view('xdd.ppd-nkkaces_02'); });
 
+// Route::get('/cuserviceone', function () { return view('xdd.ppd-nkefu_02'); })->name('cuserviceone');
 Route::resource('contactus', 'ContactusController', ['only' => ['index', 'store']]);
-
+Route::resource('cuserviceone', 'ContactuslistController', ['only' => ['index', 'store']]);
 
 Route::get('/contactusone', function () { return view('xdd.ppd-nkkaz_cc02'); });
 

@@ -151,201 +151,100 @@
     </script>
   <script type="text/javascript" src="/xdd/Scripts/jquery.fancybox.pack.js"></script>
   <link rel="stylesheet" type="text/css" href="/xdd/style/fancybox.css"/>
-  <div class='mestb'>
+  @foreach (['danger', 'warning', 'success', 'info'] as $msg)
+  @if(session()->has($msg))
+    <div class="flash-message">
+      <p class="alert alert-{{ $msg }}">
+        {{ __(session()->get($msg)) }}
+      </p>
+    </div>
+  @endif
+@endforeach
+
+
+@if (count($contactus))
+@foreach ($contactus as $topic)
+<div class='mestb'>
     <table width='100%' border='0' cellspacing='0' cellpadding='0'>
     <tr>
       <td width='25%'>
-        留言人：<span class='red_t'>嗯嗯嗯</span>
+        留言人：<span class='red_t'>{{ $topic->name }}</span>
       </td>
       <td>
-        留言内容：<span class='red_t'>shangh&nbsp;shanaghai</span>
+        留言内容：<span class='red_t'>{{ $topic->message }}</span>
       </td>
     </tr>
     <tr>
       <td width='25%'>
-        留言时间：[2018/12/28]
+        留言时间：[{{ $topic->created_at }}]
       </td>
       <td>
         <div class='rep'>
-          回复内容：
+          回复内容：{{ $topic->name }}
         </div>
       </td>
     </tr>
     </table>
   </div>
-  <div class='mestb'>
-    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-    <tr>
-      <td width='25%'>
-        留言人：<span class='red_t'>李女士</span>
-      </td>
-      <td>
-        留言内容：<span class='red_t'>您好，我们也是做水管的，这个活动您家的排名和票数都很不错，我们也一直再投票但是排名一直不高，请问您家是怎么做呢http://m.10pinping.com/vote/start.php?id=42726?tui16wl&lt;br&gt;
-        </span>
-      </td>
-    </tr>
-    <tr>
-      <td width='25%'>
-        留言时间：[2018/11/14]
-      </td>
-      <td>
-        <div class='rep'>
-          回复内容：
-        </div>
-      </td>
-    </tr>
-    </table>
-  </div>
-  <div class='mestb'>
-    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-    <tr>
-      <td width='25%'>
-        留言人：<span class='red_t'>黄涛</span>
-      </td>
-      <td>
-        留言内容：<span class='red_t'>要产品</span>
-      </td>
-    </tr>
-    <tr>
-      <td width='25%'>
-        留言时间：[2018/09/27]
-      </td>
-      <td>
-        <div class='rep'>
-          回复内容：
-        </div>
-      </td>
-    </tr>
-    </table>
-  </div>
-  <div class='mestb'>
-    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-    <tr>
-      <td width='25%'>
-        留言人：<span class='red_t'>张女士</span>
-      </td>
-      <td>
-        留言内容：<span class='red_t'>你好，你们公司有着多年生产三通管件的经验，质量好，规格齐全，最近在朋友圈看到你们行业的评选活动了，我看你们也在其中，就顺便支持了，祝你们金榜题名，期待下次合作！&lt;br&gt;
-http://m.10brandchina.com/vote/startin.php?id=41028?bsqwl
-        </span>
-      </td>
-    </tr>
-    <tr>
-      <td width='25%'>
-        留言时间：[2018/09/27]
-      </td>
-      <td>
-        <div class='rep'>
-          回复内容：
-        </div>
-      </td>
-    </tr>
-    </table>
-  </div>
-  <div class='mestb'>
-    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-    <tr>
-      <td width='25%'>
-        留言人：<span class='red_t'>刘梦亚</span>
-      </td>
-      <td>
-        留言内容：<span class='red_t'>建议把微信公众号价格取消</span>
-      </td>
-    </tr>
-    <tr>
-      <td width='25%'>
-        留言时间：[2018/06/04]
-      </td>
-      <td>
-        <div class='rep'>
-          回复内容：
-        </div>
-      </td>
-    </tr>
-    </table>
-  </div>
-  <div class='mestb'>
-    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-    <tr>
-      <td width='25%'>
-        留言人：<span class='red_t'>高女士</span>
-      </td>
-      <td>
-        留言内容：<span class='red_t'>我也是做地暖管的，看到这个地暖管品牌排名，这个多的厂家，我也想参加，这个是怎么申请的呀？需要什么资料？对公司有什么要求？&lt;br&gt;
-http://m.10brandchina.com/vote/startin.php?id=39803?tg08wl
-        </span>
-      </td>
-    </tr>
-    <tr>
-      <td width='25%'>
-        留言时间：[2018/05/18]
-      </td>
-      <td>
-        <div class='rep'>
-          回复内容：
-        </div>
-      </td>
-    </tr>
-    </table>
-  </div>
-  <div class='mestb'>
-    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-    <tr>
-      <td width='25%'>
-        留言人：<span class='red_t'>黄国梅</span>
-      </td>
-      <td>
-        留言内容：<span class='red_t'>我公司在广州寻找材料长期合作企业。</span>
-      </td>
-    </tr>
-    <tr>
-      <td width='25%'>
-        留言时间：[2018/04/24]
-      </td>
-      <td>
-        <div class='rep'>
-          回复内容：
-        </div>
-      </td>
-    </tr>
-    </table>
-  </div>
-  <div class='mestb'>
-    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-    <tr>
-      <td width='25%'>
-        留言人：<span class='red_t'>汪业飞</span>
-      </td>
-      <td>
-        留言内容：<span class='red_t'>合肥市庐江县在哪里进货？</span>
-      </td>
-    </tr>
-    <tr>
-      <td width='25%'>
-        留言时间：[2018/04/21]
-      </td>
-      <td>
-        <div class='rep'>
-          回复内容：
-        </div>
-      </td>
-    </tr>
-    </table>
-  </div>
-  <div class='page'>
-  <span class='current'>1</span></span>
-</div>
+    @endforeach
+@else
+  <div class="empty-block">暂无数据 ~_~ </div>
+@endif
+{!! $contactus->render() !!}
+<style type="text/css">
+.pagination {display: inline-block; padding-left: 0; list-style: none; border-radius: 0.25rem;width: 100%; text-align: center;}
+.pagination li {line-height: 35px; height: 35px; width: 35px!important;display: inline-block; float:initial!important;}
+.pagination li:first-child {padding-left: 10px;}
+.page-item.active .page-link {z-index: 1; color: #fff; background-color: #3490dc; border-color: #3490dc; }
+.page-link {position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #3490dc; background-color: #fff; border: 1px solid #dee2e6; }
+.page-item{clear: both;}
+.tit3{width: 80%;}
+</style>
+
+
+
+  
   <div class="mes_form mtop">
     <ul>
-      <form method="post" action="contactsave.asp">
-        <li><span>联系人：</span><input name="mlinkman" type="text" class="tx"></li>
-        <li style="margin:0 40px;"><span>手　机：</span><input name="mmobile" type="text" class="tx"></li>
-        <li><span>邮　箱：</span><input name="memail" type="text" class="tx"></li>
-        <li style="clear:both;margin:20px 0;"><span>内　容：</span><textarea name="mcontent" cols="" rows="" class="tarea"></textarea></li>
-        <li style="clear:both;text-align:center;">　　　<input name="" type="submit" class="btn a" value="提交"><input name="" type="reset" class="btn b" value="重置"></li>
+      <style type="text/css">
+        .errorskey{color: red;padding-left: 56px;}
+        .alert-success{text-align: center; font-size: 30px; height: 80px; color: #F60;text-shadow: 2px 2px 2px #999;} 
+      </style>
+      <form method="post" action="{{ route('cuserviceone.store') }}">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <li>
+          <span>联系人：</span>
+          <input name="name" type="text" class="tx" value="{{ old('name') }}">
+          <p class="errorskey">@if ($errors->has('name')){{ $errors->first('name')}}@endif</p>
+        </li>
+        <li style="margin:0 40px;">
+          <span>手　机：</span>
+          <input name="mobile" type="text" class="tx" value="{{ old('mobile') }}" >
+          <p class="errorskey">@if ($errors->has('mobile')){{ $errors->first('mobile')}}@endif</p>
+        </li>
+        <li>
+          <span>邮　箱：</span>
+          <input name="email" type="text" class="tx" value="{{ old('email') }}">
+          <p class="errorskey">@if ($errors->has('email')){{ $errors->first('email')}}@endif</p>
+        </li>
+        <li style="clear:both;margin:20px 0;">
+          <span>内　容：</span>
+          <textarea name="message" cols="" rows="" class="tarea"></textarea>
+          <p class="errorskey">@if ($errors->has('message')){{ $errors->first('message')}}@endif</p>
+        </li>
+        <li style="clear:both;text-align:center;">
+          <input name="" type="submit" class="btn a" value="提交">
+          <input name="" type="reset" class="btn b" value="重置">
+        </li>
       </form>
     </ul>
   </div>
+
+
+
+
+
+
   <div class="clear">
   </div>
 </div>
@@ -357,11 +256,12 @@ http://m.10brandchina.com/vote/startin.php?id=39803?tg08wl
   <div class="clear a1">
   </div>
   <dl>
-    <dd class="fl" style="margin-top:10px;"><img src="/xdd/images/logo2.jpg"/></dd>
+    <dd class="fl" style="margin-top:10px;"></dd>
     <dd class="fr text_r">
         Copyright &copy; 2016 湖南响当当九牧管业有限公司 All Rights Reserved
     <br/>
 湖南省长沙市雨花区万家丽中路华晨世纪广场16F
+<br>生产地址:浙江省杭州市临杭工业园区
     </dd>
   </dl>
   <div class="clear">

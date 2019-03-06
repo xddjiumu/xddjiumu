@@ -10,5 +10,5 @@ class Contactus extends Model
         'name', 'email', 'mobile', 'message',
     ];
 
-    public $timestamps = false;
+    // public $timestamps = false;
 }
