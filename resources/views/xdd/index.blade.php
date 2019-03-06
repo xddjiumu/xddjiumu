@@ -132,6 +132,7 @@ $(document).ready(function(){
   </script>
   <div class="scrollbox">
     <div id="scrollDiv">
+      @if ($topics['id'])
       <ul>
         <li>
           <span class='li44'>
@@ -149,6 +150,7 @@ $(document).ready(function(){
           </a>
         </li>
       </ul>
+      @endif
     </div>
     <div class="scroltit">
       <div class="updown" id="but_down">
