@@ -150,22 +150,62 @@
     </script>
   <script type="text/javascript" src="/xdd/Scripts/jquery.fancybox.pack.js"></script>
   <link rel="stylesheet" type="text/css" href="/xdd/style/fancybox.css"/>
+@foreach (['danger', 'warning', 'success', 'info'] as $msg)
+  @if(session()->has($msg))
+    <div class="flash-message">
+      <p class="alert alert-{{ $msg }}">
+        {{ __(session()->get($msg)) }}
+      </p>
+    </div>
+  @endif
+@endforeach
   <img src="/xdd/images/services_pic3.jpg"><br>
+
   <br>
-  <form method="post" action="marsave.asp">
+    <form method="post" action="{{ route('marketingone.store') }}">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="marform">
+      <style type="text/css">
+        .errorskey{color: red;padding-left: 0px;display: inline-block;}
+        .alert-success{text-align: center; font-size: 30px; height: 80px; color: #F60;text-shadow: 2px 2px 2px #999;} 
+      </style>
       <ul>
-        <li><span>姓　　名：</span><input type="text" name="Linkman" class="text"/></li>
-        <li><span>手　　机：</span><input type="text" class="text" name="Mobile"/></li>
-        <li><span>地　　址：</span><input type="text" class="text" name="Address"/></li>
-        <li><span>主营产品：</span><input type="text" class="text" name="Affiliate"/></li>
-        <li><span>电　　话：</span><input type="text" class="text" name="Telephone"/></li>
-        <li><span>传　　真：</span><input type="text" class="text" name="fax"/></li>
-        <li><span>邮　　编：</span><input type="text" class="text" name="ZipCode"/></li>
-        <li><span>电子邮箱：</span><input type="text" class="text" name="Email"/></li>
-        <li class="w100"><span>备注：</span><textarea name="content" rows="4"></textarea></li>
-        <li class="w100"><span>验 证 码：</span><input type="text" name="VerifyCode" class="text" style="width: 50px;"/>&nbsp;
-        <img src="Vieinc/VerifyCode.asp" align="absmiddle" id="PhotoSN" onclick="UpVerifyCode();" style=" cursor:pointer"/></li>
+        <li>
+          <span>姓　　名：</span><input type="text" class="text" name="name" value="{{ old('name') }}"/>
+          <p class="errorskey">@if ($errors->has('name')){{ $errors->first('name')}}@endif</p>
+        </li>
+        <li>
+          <span>手　　机：</span><input type="text" class="text" name="mobile" value="{{ old('mobile') }}"/>
+          <p class="errorskey">@if ($errors->has('mobile')){{ $errors->first('mobile')}}@endif</p>
+        </li>
+        <li>
+          <span>地　　址：</span><input type="text" class="text" name="address" value="{{ old('address') }}"/>
+          <p class="errorskey">@if ($errors->has('address')){{ $errors->first('address')}}@endif</p>
+        </li>
+        <li>
+          <span>主营产品：</span><input type="text" class="text" name="product" value="{{ old('product') }}"/>
+          <p class="errorskey">@if ($errors->has('product')){{ $errors->first('product')}}@endif</p>
+        </li>
+        <li>
+          <span>电　　话：</span><input type="text" class="text" name="telephone" value="{{ old('telephone') }}"/>
+          <p class="errorskey">@if ($errors->has('telephone')){{ $errors->first('telephone')}}@endif</p>
+        </li>
+        <li>
+          <span>传　　真：</span><input type="text" class="text" name="fax" value="{{ old('fax') }}"/>
+          <p class="errorskey">@if ($errors->has('fax')){{ $errors->first('fax')}}@endif</p>
+        </li>
+        <li>
+          <span>邮　　编：</span><input type="text" class="text" name="code" value="{{ old('code') }}"/>
+          <p class="errorskey">@if ($errors->has('code')){{ $errors->first('code')}}@endif</p>
+        </li>
+        <li>
+          <span>电子邮箱：</span><input type="text" class="text" name="email" value="{{ old('email') }}"/>
+          <p class="errorskey">@if ($errors->has('email')){{ $errors->first('email')}}@endif</p>
+        </li>
+        <li class="w100">
+          <span>备注：</span><textarea name="message" rows="4"></textarea>
+          <p class="errorskey">@if ($errors->has('message')){{ $errors->first('message')}}@endif</p>
+        </li>
         <script>
     function UpVerifyCode(){
       document.getElementById("PhotoSN").src = "Vieinc/VerifyCode.asp?t="+Math.random();

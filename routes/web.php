@@ -61,7 +61,6 @@ Route::get('/newsone', 'TopicsController@newsone')->name('newsone');
 // Route::get('/newsone', function () { return view('xdd.ppd-news_02'); });
 
 Route::get('/marketing', function () { return view('xdd.ppd-ninter_01'); });
-Route::get('/marketingone', function () { return view('xdd.ppd-ninter_02'); });
 
 Route::get('/cuservice', function () { return view('xdd.ppd-nkefu_01'); });
 
@@ -76,6 +75,8 @@ Route::get('/caseone', function () { return view('xdd.ppd-nkkaces_02'); });
 // Route::get('/cuserviceone', function () { return view('xdd.ppd-nkefu_02'); })->name('cuserviceone');
 Route::resource('contactus', 'ContactusController', ['only' => ['index', 'store']]);
 Route::resource('cuserviceone', 'ContactuslistController', ['only' => ['index', 'store']]);
+Route::resource('marketingone', 'JoininController', ['only' => ['index', 'store']]);
+// Route::get('/marketingone', function () { return view('xdd.ppd-ninter_02'); });
 
 Route::get('/contactusone', function () { return view('xdd.ppd-nkkaz_cc02'); });
 
