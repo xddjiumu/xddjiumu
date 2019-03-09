@@ -117,10 +117,10 @@
 <div id="glume">
   <cite class='Nubbt'><span class='on'></span><span></span><span></span><span></span></cite>
   <ul class='Limg'>
-    <li><a href='#'><img src="/xdd/images/index_banner.jpg"></a></li>
-    <li><a href='#'><img src="/xdd/images/index_banner2.jpg"></a></li>
-    <li><a href='#'><img src="/xdd/images/index_banner3.jpg"></a></li>
-    <li><a href='#'><img src="/xdd/images/index_banner4.jpg"></a></li>
+    <li><a href='#'><img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/index_banner.jpg"></a></li>
+    <li><a href='#'><img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/index_banner2.jpg"></a></li>
+    <li><a href='#'><img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/index_banner3.jpg"></a></li>
+    <li><a href='#'><img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/index_banner4.jpg"></a></li>
   </ul>
 </div>
 <div class="index_con">

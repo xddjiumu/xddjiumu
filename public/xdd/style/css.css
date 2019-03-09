@@ -38,14 +38,14 @@ select option {vertical-align:3px}
 .top_bg1,.top_bg2,.top_bg3,.top_bg4,.top_bg5,.top_bg6,.top_bg7,.top_bg8{height:165px;padding-top:495px;position:relative;z-index:1;}
 .top_bg1 .btit,.top_bg2 .btit,.top_bg3 .btit,.top_bg4 .btit,.top_bg5 .btit,.top_bg6 .btit,.top_bg7 .btit,.top_bg8 .btit{color:#fff;}
 	.top_bg1 .btit span,.top_bg2 .btit span,.top_bg3 .btit span,.top_bg4 .btit span,.top_bg5 .btit span,.top_bg6 .btit span,.top_bg7 .btit span,.top_bg8 .btit span{border-bottom:3px solid #fff;}
-.top_bg1{ background:url(../images/about_top.jpg) no-repeat top center}
-.top_bg2{ background:url(../images/pro_top.jpg) no-repeat top center }
+.top_bg1{ background:url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/about_top.jpg) no-repeat top center}
+.top_bg2{ background:url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/pro_top.jpg) no-repeat top center }
 .top_bg3{ background:url(../images/solutions_top.jpg) no-repeat top center}
-.top_bg4{ background:url(../images/news_top.jpg) no-repeat top center}
-.top_bg5{ background:url(../images/mar_top.jpg) no-repeat top center}
-.top_bg6{ background:url(../images/services_top.jpg) no-repeat top center }
-.top_bg7{ background:url(../images/case_top.jpg) no-repeat top center }
-.top_bg8{ background:url(../images/contact_top.jpg) no-repeat top center}
+.top_bg4{ background:url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/news_top.jpg) no-repeat top center}
+.top_bg5{ background:url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/mar_top.jpg) no-repeat top center}
+.top_bg6{ background:url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/services_top.jpg) no-repeat top center }
+.top_bg7{ background:url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/case_top.jpg) no-repeat top center }
+.top_bg8{ background:url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/contact_top.jpg) no-repeat top center}
 .pp{position:relative;}
 .viewpro{position:absolute;right:0;top:40px;}
 .viewpro a{background:#0e468d;color:#fff;font-size:16px;line-height:2.5em;padding:0 30px;display:inline-block;}
