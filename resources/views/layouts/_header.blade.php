@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
-  <div class="container">
+  <div class="container-fluid">
     <!-- Branding Image -->
-    <a class="navbar-brand " href="{{ url('/') }}">{{ __('local Abbreviation') }}</a>
+    <a class="navbar-brand " href="{{ url('/') }}"><img src="/images/logo.png" alt="{{ __('local Abbreviation') }}"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,7 +10,7 @@
       <ul class="navbar-nav mr-auto">
       </ul>
       <!-- Right Side Of Navbar -->
-      <ul class="navbar-nav navbar-right">
+      <ul class="navbar-nav navbar-right mr-5">
         <!-- Authentication Links -->
         @guest
           <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
