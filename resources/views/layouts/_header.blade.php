@@ -24,7 +24,7 @@
           <a class="nav-link" href="#">公司动态</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">联系我们</a>
+          <a class="nav-link" href="{{ route('contact.index') }}">联系我们</a>
         </li>
       </ul>
       <!-- Right Side Of Navbar -->

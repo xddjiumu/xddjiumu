@@ -382,7 +382,7 @@
       <p class="text-white">无论您在何时何地，有需要我们，只需拨打全国统一服务热线：<strong class="text-dark" style="font-size: 2rem;">400-041-8868</strong>，我们就近服务网点立即为您服务，剩下的事都由我们来搞定。 </p>
     </div>
     <div class="col-lg-3 col-sm-12 text-lg-right text-center pt-3 ">
-      <a class="btn btn-outline-light badge-pill" href="#">联系我们</a>
+      <a class="btn btn-outline-light badge-pill" href="{{ route('contact.index') }}">联系我们</a>
     </div>
   </div>
   </div>
@@ -460,8 +460,17 @@
         <h2>联系我们</h2>
         <p class="text-muted">无论您在何时何地，有需要我们，只需拨打全国统一服务热线：<strong class="text-danger">400-041-8868</strong>，我们就近服务网点立即为您服务，剩下的事都由我们来搞定。您再也不必为记错电话、当地服务电话的变更而烦恼了。 </p>
       </div>
-      <form>
+      <form method="POST" action="{{ route('contact.store') }}">
+        @csrf
         <div class="row">
+          <div class="col-12">
+            <textarea rows="10" cols="100" class="form-control" placeholder="留言信息" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none" name="message"></textarea>
+            @if ($errors->has('message'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('message') }}</strong>
+                </span>
+            @endif
+          </div>
           <div class="col-12 col-sm-6 py-2">
             <input type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" placeholder="称呼" required>
             @if ($errors->has('name'))
@@ -478,24 +487,29 @@
                 </span>
             @endif
           </div>
+          
           <div class="col-12 col-sm-6 py-2">
-            <input type="text" class="form-control{{ $errors->has('mobel') ? ' is-invalid' : '' }}" name="mobel" value="{{ old('mobel') }}" placeholder="联系电话" required>
-            @if ($errors->has('mobel'))
+            <input type="text" class="form-control{{ $errors->has('mobile') ? ' is-invalid' : '' }}" name="mobile" value="{{ old('mobile') }}" placeholder="联系电话" required>
+            @if ($errors->has('mobile'))
                 <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('mobel') }}</strong>
+                    <strong>{{ $errors->first('mobile') }}</strong>
                 </span>
             @endif
           </div>
-          <div class="col-12">
-            <textarea rows="10" cols="100" class="form-control" placeholder="留言信息" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
-            @if ($errors->has('mobel'))
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('mobel') }}</strong>
-                </span>
+
+          <div class="col-12 col-sm-6 py-2 input-group mb-3">
+            <input id="captcha" class="form-control{{ $errors->has('captcha') ? ' is-invalid' : '' }}" name="captcha" placeholder="{{ __('local Verification Code') }}" required>
+            <div class="input-group-append">
+              <img class="" style="height: 2.3rem" src="{{ captcha_src('flat') }}" onclick="this.src='/captcha/flat?'+Math.random()" title="{{ __('local getVerification Code') }}">
+            </div>
+            @if ($errors->has('captcha'))
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ __($errors->first('captcha')) }}</strong>
+              </span>
             @endif
           </div>
           <div class="col-12 py-3 text-center">
-            <button type="submit" class="btn btn-primary">Submit Message</button>
+            <button type="submit" class="btn btn-primary">提交</button>
           </div>
         </div>
       </form>
