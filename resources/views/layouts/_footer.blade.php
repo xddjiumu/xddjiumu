@@ -1,8 +1,8 @@
 <footer class="bg-secondary">
     <div class="container">
-        <div class="row text-white py-5">
+        <div class="row text-white pt-5">
           <div class="col-12 col-md text-center pb-4">
-            <img class="mb-2 w-75" src="/images/logo.png" alt="asd">
+            <img class="mb-2 w-100" src="/images/console/logofooter.png" alt="asd">
             <small class="d-block text-dark text-right">湖南省长沙市雨花区万家丽中路华晨世纪广场16F</small>
             <small class="d-block text-dark text-right">湖南晌当当九牧管业有限公司© 2018-2019</small>
             <small class="d-block text-dark text-right">生产地址:浙江省杭州市临杭工业园区</small>
@@ -10,11 +10,11 @@
           <div class="col-6 col-md">
           	<div class="row text-center">
                 <div class="col-6">
-                    <img class="w-100" src="/images/logo.png">
+                    <img class="w-100" src="/images/console/weixinqrcode.jpg">
                     <p>微信公众号</p>
                 </div>
                 <div class="col-6">
-                    <img class="w-100" src="/images/logo.png">
+                    <img class="w-100" src="/images/console/httpwwwqrcode.jpg">
                     <p>九牧管业</p>
                 </div>
             </div>
