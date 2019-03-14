@@ -1,10 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="container">
+<div class="container py-5">
   <div class="col-md-8 offset-md-2">
-
     <div class="card">
       <div class="card-header">
         <h4>
@@ -13,7 +11,6 @@
       </div>
 
       <div class="card-body">
-
         <form action="{{ route('users.update', $user->id) }}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
           <input type="hidden" name="_method" value="PUT">
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -47,5 +44,4 @@
     </div>
   </div>
 </div>
-
 @endsection

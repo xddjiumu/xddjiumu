@@ -8,6 +8,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left Side Of Navbar -->
       <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url('/') }}">站点首页 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">品牌介绍</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">产品中心</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">新闻资讯</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">公司动态</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">联系我们</a>
+        </li>
       </ul>
       <!-- Right Side Of Navbar -->
       <ul class="navbar-nav navbar-right mr-5 pr-3">
