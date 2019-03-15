@@ -31,8 +31,13 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
 Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
+//Home
 Route::get('/', 'PagesController@root')->name('root');
-
+//用户信息查看，更改，
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
+//联系我们表单提交页
 Route::resource('contact', 'ContactController', ['only' => ['index', 'store']]);
+//新闻，动态，显示查看
 Route::resource('topics', 'TopicsController', ['only' => ['index', 'store', 'show']]);
+//分类列表,新闻，动态
+Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
