@@ -16,6 +16,16 @@ class TopicsTableSeeder extends Seeder
         // 所有分类 ID 数组，如：[1,2,3,4]
         $category_ids = Category::all()->pluck('id')->toArray();
 
+        // 头像假数据
+        $avatars = [
+            'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/s5ehp11z6s.png',
+            'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/Lhd1SHqu86.png',
+            'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/LOnMrqbHJn.png',
+            'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/xAuDMxteQy.png',
+            'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png',
+            'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/NDnzMutoxX.png',
+        ];
+
         // 获取 Faker 实例
         $faker = app(Faker\Generator::class);
 
@@ -23,10 +33,11 @@ class TopicsTableSeeder extends Seeder
                         ->times(100)
                         ->make()
                         ->each(function ($topic, $index)
-                            use ($category_ids, $faker)
+                            use ($category_ids, $faker, $avatars)
         {
             // 从话题分类 ID 数组中随机取出一个并赋值
             $topic->category_id = $faker->randomElement($category_ids);
+            $topic->avatar = $faker->randomElement($avatars);
         });
 
         // 将数据集合转换为数组，并插入到数据库中
