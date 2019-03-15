@@ -103,7 +103,7 @@ return [
     ],
     /*
     |--------------------------------------------------------------------------
-    | Laravel-admin upload setting
+    | Laravel-admin ` setting
     |--------------------------------------------------------------------------
     |
     | File system configuration for form upload files and images, including
