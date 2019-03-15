@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left Side Of Navbar -->
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item {{ active_class(if_route('root')) }}">
           <a class="nav-link" href="{{ url('/') }}">站点首页 <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -17,13 +17,13 @@
         <li class="nav-item">
           <a class="nav-link" href="#">产品中心</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ category_nav_active(1) }}">
           <a class="nav-link" href="{{ route('categories.show', 1) }}">新闻资讯</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ category_nav_active(2) }}">
           <a class="nav-link" href="{{ route('categories.show', 2) }}">公司动态</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ active_class((if_route('contact.index'))) }}">
           <a class="nav-link" href="{{ route('contact.index') }}">联系我们</a>
         </li>
       </ul>
