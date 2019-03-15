@@ -44,7 +44,7 @@
               <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">{{ __('local Editing materials') }}</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" id="logout" href="#">
-                <form action="{{ route('logout') }}" method="POST">
+                <form action="{{ route('logout') }}" method="POST" onsubmit="return confirm('您确定要退出吗？');">
                   {{ csrf_field() }}
                   <button class="btn btn-block btn-danger" type="submit" name="button">{{ __('local Sign out') }}</button>
                 </form>
