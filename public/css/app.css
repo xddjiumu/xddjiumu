@@ -16379,6 +16379,11 @@ body {
   text-indent: 2rem;
 }
 
+.text-pheight4overflow {
+  height: 4rem;
+  overflow: hidden;
+}
+
 /* header */
 
 .navbar-static-top {

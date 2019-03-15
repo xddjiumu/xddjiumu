@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Topic;
 
 class PagesController extends Controller
 {
@@ -11,9 +12,11 @@ class PagesController extends Controller
      *
      * @return views/home
      */
-    public function root()
+    public function root(Topic $topic)
     {
         // $this->middleware('auth');
-        return view('pages.root');
+        $news = $topic->with('category')->where('category_id', 1)->paginate(8);
+        $dynamic = $topic->with('category')->where('category_id', 2)->paginate(8);
+        return view('pages.root', compact('news', 'dynamic'));
     }
 }

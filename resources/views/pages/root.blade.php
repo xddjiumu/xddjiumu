@@ -99,128 +99,26 @@
         <h2>新闻资讯</h2>
         <p class="text-muted">发布现行家装行业新的技术标准，技术，行业成熟方案</p>
       </div>
+      @if (count($news))
+      @foreach ($news as $topic)
       <div class="col-md-3 col-sm-6">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169605a7d4a%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169605a7d4a%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+          <img class="card-img-top" alt="{{ $topic->title }}" style="height: 225px; width: 100%; display: block;" src="{{ isset($category) ? $category->name : './images/console/new_default_img.png' }}"/>
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h4 class="card-text text-truncate">{{ $topic->title }}</h4>
+            <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href=""><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="">查看</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ route('topics.show', $topic->id) }}"><i class="fa fa-arrow-circle-left fa-spin"></i></a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ route('topics.show', $topic->id) }}">查看</a>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted">{{ $topic->created_at->diffForHumans() }}</small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169605a7d4b%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169605a7d4b%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href=""><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="">查看</a>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169605a7d53%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169605a7d53%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href=""><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="">查看</a>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169605a7d54%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169605a7d54%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href=""><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="">查看</a>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169605a7d55%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169605a7d55%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href=""><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="">查看</a>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169605a7d56%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169605a7d56%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href=""><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="">查看</a>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169605a7d58%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169605a7d58%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href=""><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="">查看</a>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_169605a7d59%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_169605a7d59%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.7265625%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href=""><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="">查看</a>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
+      @endforeach
+      @endif
     </div>
   </div>
 </section>
@@ -244,87 +142,20 @@
         <p class="text-muted">发布公司最近运营状态，内部运营，外部活动，加盟招商，优惠活动</p>
       </div>
     <div class="row">
+      @if (count($dynamic))
+      @foreach ($dynamic as $topic)
       <div class="col-md-3 col-sm-6 my-2">
         <div class="card">
-          <img class="card-img-top" src="./public/images/one.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{{ isset($category) ? $category->name : './images/console/new_default_img.png' }}" alt="{{ $topic->title }}">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
+            <h5 class="card-title text-truncate">{{ $topic->title }}</h5>
+            <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>
+            <a href="{{ route('topics.show', $topic->id) }}" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 my-2">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/one.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 my-2">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/one.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6 my-2">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/one.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 my-2">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/one.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 my-2">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/one.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 my-2">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/one.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 my-2">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/one.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
-          </div>
-        </div>
-      </div>
+      @endforeach
+      @endif
     </div>
   </div>
 </section>

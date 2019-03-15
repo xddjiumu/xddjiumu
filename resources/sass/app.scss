@@ -39,7 +39,13 @@ body {
 }
 
 /* localhost all */
-.text-indent{text-indent: 2rem;}
+.text-indent{
+  text-indent: 2rem;
+}
+.text-pheight4overflow{
+  height: 4rem;
+  overflow: hidden;
+}
 
 /* header */
 .navbar-static-top {
@@ -70,6 +76,6 @@ html {
 
 /* Index register page */
 .indexblock {
-    height: 490px;
-    overflow: hidden;
+  height: 490px;
+  overflow: hidden;
 }
