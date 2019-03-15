@@ -11,5 +11,7 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index');
-
+    $router->get('users', 'UsersController@index');
+    $router->get('contact', 'ContactController@index');
+    $router->get('contact/{id}', 'ContactController@show');
 });
