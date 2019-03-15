@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Models\Category;
 use App\Models\Topic;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\HasResourceActions;
@@ -83,9 +84,11 @@ class TopicsController extends Controller
 
         $grid->id('ID');
         $grid->title('标题');
-        $grid->body('帖子内容');
+        // $grid->body('帖子内容');
         // $grid->avatar('头像');
-        $grid->category_id('分类 ID');
+        $grid->category_id('分类 ID')->display(function($categoryId) {
+            return Category::find($categoryId)->name;
+        });
         // $grid->view_count('查看总数');
         $grid->order('排序');
         // $grid->excerpt('SEO 优化');
@@ -146,7 +149,11 @@ class TopicsController extends Controller
         $form->text('title', '标题');
         $form->textarea('body', '帖子内容');
         $form->image('avatar', '头像');
-        $form->number('category_id', '分类 ID');
+
+        $categorys = Category::all()->pluck('name', 'id')->toArray();
+        // dd($categorys);
+        $form->select('category_id', '分类 ID')->options($categorys);
+
         $form->number('view_count', '查看总数');
         $form->number('order', '排序');
         $form->textarea('excerpt', 'SEO 优化');
