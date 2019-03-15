@@ -35,3 +35,4 @@ Route::get('/', 'PagesController@root')->name('root');
 
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 Route::resource('contact', 'ContactController', ['only' => ['index', 'store']]);
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'store', 'show']]);
