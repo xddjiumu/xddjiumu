@@ -1,4 +1,7 @@
 @extends('layouts.app')
+
+@section('title', '联系我们')
+
 @section('content')
 <div class="d-flex flex-wrap align-content-center bg-light" style="height:10rem;background: url(./images/contact-bg.jpg) no-repeat center;background-size: 100% 100%;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8">
   <h1 class="p-5 text-white">联系我们</h1>
