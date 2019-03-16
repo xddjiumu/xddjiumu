@@ -23,6 +23,9 @@
           <p>{{ $topic->excerpt }}</p>
           <hr>
         </div>
+        <style type="text/css">
+          .blog-post img{max-width: 100%}
+        </style>
         <div class="blog-post">
           {!! $topic->body !!}
         </div>
@@ -33,7 +36,7 @@
           <ol class="list-unstyled mb-0">
             @if (count($news))
             @foreach ($news as $topic)
-            <li><a href="{{ route('topics.show', [$topic->id]) }}">{{ $topic->title }}</a></li>
+            <li><a href="{{ route('topics.show', [$topic->id]) }}" class="text-truncate">{{ $topic->title }}</a></li>
             @endforeach
             @endif
           </ol>
@@ -43,7 +46,7 @@
           <ol class="list-unstyled">
             @if (count($dynamic))
             @foreach ($dynamic as $topic)
-            <li><a href="{{ route('topics.show', [$topic->id]) }}">{{ $topic->title }}</a></li>
+            <li><a href="{{ route('topics.show', [$topic->id]) }}" class="text-truncate">{{ $topic->title }}</a></li>
             @endforeach
             @endif
           </ol>
