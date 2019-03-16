@@ -14,7 +14,7 @@
     </div>
   </div>
 </section>
-<main role="main" class="container p-3 m-5" style="background-color: #fff;">
+<main role="main" class="container p-3" style="background-color: #fff;">
     <div class="row">
       <div class="col-md-8 blog-main">
         <h1 class="pb-3 mb-4 font-italic border-bottom" style="font-size: 1.5rem"> {{ $topic->title }} </h1>
@@ -27,7 +27,7 @@
           {{ $topic->body }}
         </div>
       </div>
-      <aside class="col-md-4 blog-sidebar">
+      <aside class="col-md-4 blog-sidebar mt-4 mt-sm-0">
         <div class="p-3">
           <h4 class="font-italic">新闻资讯</h4>
           <ol class="list-unstyled mb-0">

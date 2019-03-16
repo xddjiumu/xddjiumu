@@ -19,7 +19,7 @@
                 </div>
             </div>
           </div>
-          <div class="col-6 col-md">
+          <div class="col-6 col-md"><!-- 
             <h5>Features</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-white" href="#">Cool stuff</a></li>
@@ -29,8 +29,8 @@
               <li><a class="text-white" href="#">Another one</a></li>
               <li><a class="text-white" href="#">Last time</a></li>
             </ul>
-          </div>
-          <div class="col-6 col-md">
+           --></div>
+          <div class="col-6 col-md"><!-- 
             <h5>Resources</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-white" href="#">Resource</a></li>
@@ -38,16 +38,14 @@
               <li><a class="text-white" href="#">Another resource</a></li>
               <li><a class="text-white" href="#">Final resource</a></li>
             </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>关于我们</h5>
+           --></div>
+           <div class="col-6 col-md">
+            <!-- <h5>关于我们</h5> -->
             <ul class="list-unstyled text-small">
-              <li><a class="text-white" href="#">教育简介</a></li>
-              <li><a class="text-white" href="#">教育团队</a></li>
-              <li><a class="text-white" href="#">联系我们</a></li>
-              <li><a class="text-white" href="#">加入我们</a></li>
-              <li><a class="text-white" href="#">{{ __('local Contact us') }}❤</a></li>
-              <li><a class="text-white" href="#">{{ __('local Design and coding') }}</a></li>
+              <li><a class="text-white" href="{{ route('contact.index') }}">联系我们</a></li>
+              <li><a class="text-white" href="{{ route('dynamic.index') }}">公司动态</a></li>
+              <li><a class="text-white" href="{{ route('news.index') }}">新闻资讯</a></li>
+              <li><a class="text-white" href="{{ route('root') }}">网站首页</a></li>
             </ul>
           </div>
         </div>

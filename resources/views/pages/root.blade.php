@@ -347,7 +347,7 @@
     </div>
   </div>
 </section>
-
+<!-- 
 <hr>
 <hr>
 <hr>
@@ -361,7 +361,6 @@
 
 <section>
   <div class="container py-5">
-    <!-- Example row of columns -->
     <div class="row">
       <div class="col-12 text-center py-md-5">
         <h2>常见问题</h2>
@@ -468,5 +467,5 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 @stop
