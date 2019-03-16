@@ -24,7 +24,7 @@
           <hr>
         </div>
         <div class="blog-post">
-          {{ $topic->body }}
+          {!! $topic->body !!}
         </div>
       </div>
       <aside class="col-md-4 blog-sidebar mt-4 mt-sm-0">

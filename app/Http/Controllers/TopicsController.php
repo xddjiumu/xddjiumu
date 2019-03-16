@@ -17,8 +17,8 @@ class TopicsController extends Controller
     {
         // dd($topic);
         $categorys = $topic->category()->pluck('name')->toArray();
-        $news = Topic::withOrder($request->order)->paginate(10);
-        $dynamic = Topic::withOrder($request->order)->paginate(10);
+        $news = Topic::withOrder($request->order)->where('category_id', 1)->paginate(10);
+        $dynamic = Topic::withOrder($request->order)->where('category_id', 2)->paginate(10);
         // dd($categorys);
         return view('topics.show', compact('topic', 'news', 'dynamic', 'categorys'));
     }
