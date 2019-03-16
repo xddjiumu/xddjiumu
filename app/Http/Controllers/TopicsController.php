@@ -12,4 +12,14 @@ class TopicsController extends Controller
         $topics = $topic->withOrder($request->order)->paginate(20);
         return view('topics.index', compact('topics'));
     }
+
+    public function show(Request $request, Topic $topic)
+    {
+        // dd($topic);
+        $categorys = $topic->category()->pluck('name')->toArray();
+        $news = Topic::withOrder($request->order)->paginate(10);
+        $dynamic = Topic::withOrder($request->order)->paginate(10);
+        // dd($categorys);
+        return view('topics.show', compact('topic', 'news', 'dynamic', 'categorys'));
+    }
 }
