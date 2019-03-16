@@ -41,3 +41,7 @@ Route::resource('contact', 'ContactController', ['only' => ['index', 'store']]);
 Route::resource('topics', 'TopicsController', ['only' => ['index', 'store', 'show']]);
 //分类列表,新闻，动态
 Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
+//新闻
+Route::resource('news', 'NewsController', ['only' => ['index']]);
+//动态
+Route::resource('dynamic', 'DynamicController', ['only' => ['index']]);

@@ -18,10 +18,10 @@
           <a class="nav-link" href="#">产品中心</a>
         </li>
         <li class="nav-item {{ category_nav_active(1) }}">
-          <a class="nav-link" href="{{ route('categories.show', 1) }}">新闻资讯</a>
+          <a class="nav-link" href="{{ route('news.index') }}">新闻资讯</a>
         </li>
         <li class="nav-item {{ category_nav_active(2) }}">
-          <a class="nav-link" href="{{ route('categories.show', 2) }}">公司动态</a>
+          <a class="nav-link" href="{{ route('dynamic.index') }}">公司动态</a>
         </li>
         <li class="nav-item {{ active_class((if_route('contact.index'))) }}">
           <a class="nav-link" href="{{ route('contact.index') }}">联系我们</a>
