@@ -4,6 +4,18 @@
 
 @section('content')
 <section>
+  <div class="jumbotron" style="background: url(/images/contact-bg.jpg) no-repeat center;background-size: 100% 100%;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8">
+    <div class="container">
+      @if (isset($category))
+        <div class="alert alert-info" role="alert">
+          <h1 class="text-dark mb-0" style="font-size: 1rem">{{ $category->name }} ：{{ $category->description }}</h1>
+        </div>
+      @endif
+    </div>
+  </div>
+</section>
+
+<section>
   <div class="container">
     <div class="row mb-5">
       <div class="col-lg-9 col-md-9 topic-list">
