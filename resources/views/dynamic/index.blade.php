@@ -42,19 +42,13 @@
       </div>
       @if (count($news))
       @foreach ($news as $topic)
-      <div class="col-md-3 col-sm-6">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top news-avatar" alt="{{ $topic->title }}" src="{{ isset($topic->avatar) ? $topic->avatar : './images/console/new_default_img.png' }}"/>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="card">
+          <img class="card-img-top news-avatar" src="{{ isset($topic->avatar) ? $topic->avatar : './images/console/new_default_img.png' }}" alt="{{ $topic->title }}">
           <div class="card-body">
-            <h4 class="card-text text-truncate">{{ $topic->title }}</h4>
-            <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href="{{ route('topics.show', $topic->id) }}"><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="{{ route('topics.show', $topic->id) }}">查看</a>
-              </div>
-              <small class="text-muted">{{ $topic->created_at->diffForHumans() }}</small>
-            </div>
+            <h5 class="card-title text-truncate">{{ $topic->title }}</h5>
+            <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}<br>{{ $topic->created_at->diffForHumans() }}</p>
+            <a href="{{ route('topics.show', $topic->id) }}" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
           </div>
         </div>
       </div>
