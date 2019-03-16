@@ -147,7 +147,7 @@ class TopicsController extends Controller
         $form = new Form(new Topic);
 
         $form->text('title', '标题');
-        $form->textarea('body', '帖子内容');
+        $form->editor('body', '帖子内容');
         $form->image('avatar', '头像');
 
         $categorys = Category::all()->pluck('name', 'id')->toArray();
