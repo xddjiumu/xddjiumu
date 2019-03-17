@@ -146,7 +146,7 @@
       @foreach ($dynamic as $topic)
       <div class="col-md-3 col-sm-6 my-2">
         <div class="card">
-          <img class="card-img-top news-avatar" src="{{ isset($topic->avatar) ? $topic->avatar : './images/console/new_default_img.png' }}" alt="{{ $topic->title }}">
+          <img class="card-img-top news-avatar" src="{{ isset($topic->avatar) ? 'uploads/'.$topic->avatar : './images/console/new_default_img.png' }}" alt="{{ $topic->title }}">
           <div class="card-body">
             <h5 class="card-title text-truncate">{{ $topic->title }}</h5>
             <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>
