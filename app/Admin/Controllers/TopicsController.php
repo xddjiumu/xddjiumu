@@ -85,7 +85,7 @@ class TopicsController extends Controller
         $grid->id('ID');
         $grid->title('标题');
         // $grid->body('帖子内容');
-        // $grid->avatar('头像');
+        // $grid->avatar('图片');
         $grid->category_id('分类 ID')->display(function($categoryId) {
             return Category::find($categoryId)->name;
         });
@@ -125,7 +125,7 @@ class TopicsController extends Controller
         $show->id('ID');
         $show->title('标题');
         $show->body('帖子内容');
-        $show->avatar('头像');
+        $show->avatar('图片');
         $show->category_id('分类 ID');
         $show->view_count('查看总数');
         $show->order('排序');
@@ -148,7 +148,7 @@ class TopicsController extends Controller
 
         $form->text('title', '标题');
         $form->editor('body', '帖子内容');
-        $form->image('avatar', '头像');
+        $form->image('avatar', '图片');
 
         $categorys = Category::all()->pluck('name', 'id')->toArray();
         // dd($categorys);
