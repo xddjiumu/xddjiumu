@@ -119,12 +119,11 @@ class ContactController extends Controller
         $show = new Show(Contact::findOrFail($id));
 
         $show->id('Id');
-        $show->name('Name');
+        $show->name('联系人');
         $show->email('Email');
-        $show->mobile('Mobile');
-        $show->message('Message');
-        $show->created_at('Created at');
-        $show->updated_at('Updated at');
+        $show->mobile('手机');
+        $show->message('留言内容');
+        $show->created_at('提交时间');
 
         return $show;
     }

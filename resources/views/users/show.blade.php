@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-lg-3 col-md-3 hidden-sm hidden-xs user-info">
       <div class="card ">
-        <img class="card-img-top" src="{{ $user->avatar }}" alt="{{ $user->name }}">
+        <img class="card-img-top" src="{{ isset($user->avatar) ? $user->avatar : 'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png' }}" alt="{{ $user->name }}">
         <div class="card-body">
           <h5><strong>{{ __('local Personal profile')}}</strong></h5>
           <p>{{ $user->introduction }}</p>
