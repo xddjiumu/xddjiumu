@@ -18,8 +18,8 @@
         <li class="nav-item {{ active_class((if_route('brand'))) }}">
           <a class="nav-link" href="{{ route('brand') }}">品牌介绍</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">产品中心</a>
+        <li class="nav-item {{ active_class((if_route('product'))) }}">
+          <a class="nav-link" href="{{ route('product') }}">产品中心</a>
         </li>
         <li class="nav-item {{ category_nav_active(1) }}">
           <a class="nav-link" href="{{ route('news.index') }}">新闻资讯</a>

@@ -47,3 +47,5 @@ Route::resource('news', 'NewsController', ['only' => ['index']]);
 Route::resource('dynamic', 'DynamicController', ['only' => ['index']]);
 //品牌介绍
 Route::get('brand', 'PagesController@index')->name('brand');
+//产品中心
+Route::get('product', 'PagesController@product')->name('product');
