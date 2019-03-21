@@ -54,5 +54,5 @@ Route::get('product1', 'PagesController@product1')->name('product1');
 //产品中心
 Route::get('product2', 'PagesController@product2')->name('product2');
 //产品验证
-Route::get('/securitycode', 'SecuritycodeController@index')->name('securitycode.index');
-Route::get('/securitycode/{id}', 'SecuritycodeController@show')->name('securitycode.show');
+// Route::get('/securitycode', 'SecuritycodeController@index')->name('securitycode.index');
+// Route::get('/securitycode/{id}', 'SecuritycodeController@show')->name('securitycode.show');
