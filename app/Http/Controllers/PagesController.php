@@ -19,4 +19,9 @@ class PagesController extends Controller
         $dynamic = $topic->with('category')->where('category_id', 2)->paginate(8);
         return view('pages.root', compact('news', 'dynamic'));
     }
+
+    public function index()
+    {
+        return view('pages.index', compact('news', 'dynamic'));
+    }
 }

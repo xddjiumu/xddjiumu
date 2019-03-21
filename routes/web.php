@@ -45,3 +45,5 @@ Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
 Route::resource('news', 'NewsController', ['only' => ['index']]);
 //动态
 Route::resource('dynamic', 'DynamicController', ['only' => ['index']]);
+//品牌介绍
+Route::get('brand', 'PagesController@index')->name('brand');
