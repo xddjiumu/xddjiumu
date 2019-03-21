@@ -1,4 +1,7 @@
 @extends('layouts.app')
+
+@section('title', '品牌介绍')
+
 @section('content')
 <div class="text-center indexblock text-white pt-5 my-2" style="background-image: url('http://demo.cssmoban.com/cssthemes5/twts_169_bell/img/parallax-bg.jpg'); background-position: 0px -52.4px;">
   <h2 class="px-2 pt-5">品牌介绍</h2>
