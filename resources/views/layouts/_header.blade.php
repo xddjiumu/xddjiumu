@@ -15,7 +15,7 @@
         <li class="nav-item {{ active_class(if_route('root')) }}">
           <a class="nav-link" href="{{ url('/') }}">站点首页 <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ active_class((if_route('brand'))) }}">
           <a class="nav-link" href="{{ route('brand') }}">品牌介绍</a>
         </li>
         <li class="nav-item">
