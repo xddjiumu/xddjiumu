@@ -49,3 +49,7 @@ Route::resource('dynamic', 'DynamicController', ['only' => ['index']]);
 Route::get('brand', 'PagesController@index')->name('brand');
 //产品中心
 Route::get('product', 'PagesController@product')->name('product');
+//产品中心
+Route::get('product1', 'PagesController@product1')->name('product1');
+//产品中心
+Route::get('product2', 'PagesController@product2')->name('product2');

@@ -29,4 +29,14 @@ class PagesController extends Controller
     {
         return view('pages.product', compact('news', 'dynamic'));
     }
+
+    public function product1()
+    {
+        return view('pages.product1', compact('news', 'dynamic'));
+    }
+
+    public function product2()
+    {
+        return view('pages.product2', compact('news', 'dynamic'));
+    }
 }
