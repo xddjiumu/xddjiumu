@@ -26,181 +26,149 @@
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/34.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">PP-R热水管</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/35.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">等径直接</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/36.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">45 度弯头</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/37.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">异径直接</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/38.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">90度弯头</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/39.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">异径弯头</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/40.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">正三通</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/41.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">异径三通</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/42.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/10.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">全塑活接</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/43.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/11.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">内丝直接</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/44.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/12.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">外丝直接</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/45.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/13.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">内丝弯头</figcaption>
         </figure>
       </div>
-
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/46.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/14.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">外丝弯头</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/47.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">内丝活接</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/48.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">外丝活接</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/49.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/15.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">内丝三通</figcaption>
         </figure>
       </div>
-
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/50.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/16.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">外丝三通</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/51.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">暗阀</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/52.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">连体三通</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/53.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">连体弯头</figcaption>
-        </figure>
-      </div>
-
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/54.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">铜芯全塑阀</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure class="figure">
-          <img src="/images/product/55.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/17.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">精品截止阀</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/56.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/18.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">内丝活接</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/19.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">外丝活接</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/20.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">暗阀</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/21.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">双活接铜球阀</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/22.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">双活接铜球阀</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/57.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">短过桥</figcaption>
+          <img src="/images/product/23.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">直接活接</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/24.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">正弯活接</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/25.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">铜芯全塑阀</figcaption>
         </figure>
       </div>
 
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/58.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">管堵</figcaption>
+          <img src="/images/product/26.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">连体三通</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/59.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/27.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">连体弯头</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/28.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">短过桥</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/29.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">U型管卡</figcaption>
         </figure>
       </div>
+
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/60.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <img src="/images/product/30.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">管帽</figcaption>
         </figure>
       </div>
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/61.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">直接活接</figcaption>
+          <img src="/images/product/31.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">管堵</figcaption>
         </figure>
       </div>
-
       <div class="col-md-3 text-center">
         <figure class="figure">
-          <img src="/images/product/62.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">正弯活接</figcaption>
+          <img src="/images/product/32.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">单截止阀</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 text-center">
+        <figure class="figure">
+          <img src="/images/product/33.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">双截止阀</figcaption>
         </figure>
       </div>
     </div>
