@@ -6,6 +6,9 @@
         <a href="{{ route('topics.show', $topic->id) }}">
           {{ $topic->title }}
         </a>
+        <a href="{{ $topic->link() }}">
+          {{ $topic->title }}
+        </a>
         <span class="meta float-right text-secondary">
           {{ $topic->reply_count }} 回复
           <span> ⋅ </span>

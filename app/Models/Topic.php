@@ -10,6 +10,11 @@ class Topic extends Model
         'title', 'body', 'user_id', 'category_id', 'reply_count', 'view_count', 'last_reply_user_id', 'order', 'excerpt', 'slug'
     ];
 
+    public function link($params = [])
+    {
+        return route('topics.show', array_merge([$this->id, $this->slug], $params));
+    }
+
     //DB:关联
     public function category()
     {

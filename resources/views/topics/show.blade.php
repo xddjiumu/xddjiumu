@@ -36,7 +36,7 @@
           <ol class="list-unstyled mb-0">
             @if (count($news))
             @foreach ($news as $topic)
-            <li><a href="{{ route('topics.show', [$topic->id]) }}" class="text-truncate">{{ $topic->title }}</a></li>
+            <li class="text-truncate"><a href="{{ $topic->link() }}" class="text-truncate">{{ $topic->title }}</a></li>
             @endforeach
             @endif
           </ol>
@@ -46,7 +46,7 @@
           <ol class="list-unstyled">
             @if (count($dynamic))
             @foreach ($dynamic as $topic)
-            <li><a href="{{ route('topics.show', [$topic->id]) }}" class="text-truncate">{{ $topic->title }}</a></li>
+            <li class="text-truncate"><a href="{{ $topic->link() }}" class="text-truncate">{{ $topic->title }}</a></li>
             @endforeach
             @endif
           </ol>

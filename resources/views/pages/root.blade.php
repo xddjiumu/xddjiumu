@@ -109,8 +109,8 @@
             <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href="{{ route('topics.show', $topic->id) }}"><i class="fa fa-arrow-circle-left fa-spin"></i></a>
-                <a class="btn btn-sm btn-outline-secondary" href="{{ route('topics.show', $topic->id) }}">查看</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ $topic->link() }}"><i class="fa fa-arrow-circle-left fa-spin"></i></a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ $topic->link() }}">查看</a>
               </div>
               <small class="text-muted">{{ $topic->created_at->diffForHumans() }}</small>
             </div>
@@ -150,7 +150,7 @@
           <div class="card-body">
             <h5 class="card-title text-truncate">{{ $topic->title }}</h5>
             <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>
-            <a href="{{ route('topics.show', $topic->id) }}" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
+            <a href="{{ $topic->link() }}" class="btn btn-primary"><i class="fa fa-arrows-alt fa-spin"></i> 查看</a>
           </div>
         </div>
       </div>
