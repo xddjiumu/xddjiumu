@@ -42,7 +42,7 @@
       @foreach ($news as $topic)
       <div class="col-md-3 col-sm-6">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top news-avatar" alt="{{ $topic->title }}" src="{{ isset($topic->avatar) ? 'uploads/'.$topic->avatar : 'https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/new_default_img.png' }}"/>
+          <img class="card-img-top news-avatar" alt="{{ $topic->title }}" src="{{ isset($topic->avatar) ? __('local oss file images'). $topic->avatar : 'https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/new_default_img.png' }}"/>
           <div class="card-body">
             <h4 class="card-text text-truncate">{{ $topic->title }}</h4>
             <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>
