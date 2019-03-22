@@ -87,7 +87,7 @@
   <p class="pb-5 px-2">公司采用具有国际先进水平的现代化生产设备、专业检测设备和进口优质原料，以传统的制管工艺为依托，传承现代化科技精髓，产品达到国际健康管道标准。企业严格执行IS09001:2008国际质量管理体系认证</p>
   <div class="row p-2 m-0">
     <div class="col-12 col-sm-8 m-auto">
-      <img alt="Bell - A perfect theme" class="w-100" src="http://demo.cssmoban.com/cssthemes5/twts_169_bell/img/gadgets.png">
+      <img alt="Bell - A perfect theme" class="w-100" src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/gadgets.png">
     </div>
   </div>
 </div>
@@ -103,7 +103,7 @@
       @foreach ($news as $topic)
       <div class="col-md-3 col-sm-6">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top news-avatar" alt="{{ $topic->title }}" src="{{ isset($topic->avatar) ? 'uploads/'.$topic->avatar : './images/console/new_default_img.png' }}"/>
+          <img class="card-img-top news-avatar" alt="{{ $topic->title }}" src="{{ isset($topic->avatar) ? __('local oss file images'). $topic->avatar : './images/console/new_default_img.png' }}"/>
           <div class="card-body">
             <h4 class="card-text text-truncate">{{ $topic->title }}</h4>
             <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>
@@ -146,7 +146,7 @@
       @foreach ($dynamic as $topic)
       <div class="col-md-3 col-sm-6 my-2">
         <div class="card">
-          <img class="card-img-top news-avatar" src="{{ isset($topic->avatar) ? 'uploads/'.$topic->avatar : 'https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/new_default_img.png' }}" alt="{{ $topic->title }}">
+          <img class="card-img-top news-avatar" src="{{ isset($topic->avatar) ? __('local oss file images'). $topic->avatar : 'https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/new_default_img.png' }}" alt="{{ $topic->title }}">
           <div class="card-body">
             <h5 class="card-title text-truncate">{{ $topic->title }}</h5>
             <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>

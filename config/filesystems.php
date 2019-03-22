@@ -71,6 +71,15 @@ return [
             'url' => env('APP_URL').'/uploads/',
         ],
 
+        'oss' => [
+            'driver'        => 'oss',
+            'access_id'     => env('oss_access_id', 'access_id'),
+            'access_key'    => env('oss_access_key', 'access_key'),
+            'bucket'        => env('oss_bucket', 'bucket'),
+            'endpoint'      => env('oss_endpoint', 'endpoint'),
+            'cdnDomain'     => env('oss_cdnDomain', 'cdnDomain'),
+            'isCName'       => false,
+            'debug'         => true,
+        ],
     ],
-
 ];
