@@ -4,7 +4,7 @@
 
 @section('content')
 <section>
-  <div class="jumbotron" style="background: url(/images/contact-bg.jpg) no-repeat center;background-size: 100% 100%;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8">
+  <div class="jumbotron" style="background: url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/contact-bg.jpg) no-repeat center;background-size: 100% 100%;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8">
     <div class="container">
       @if (isset($category))
         <button type="button" class="btn btn-dark">{{ $category->name }} ：{{ $category->description }}</button>
@@ -42,7 +42,7 @@
       @foreach ($news as $topic)
       <div class="col-md-3 col-sm-6">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top news-avatar" alt="{{ $topic->title }}" src="{{ isset($topic->avatar) ? 'uploads/'.$topic->avatar : './images/console/new_default_img.png' }}"/>
+          <img class="card-img-top news-avatar" alt="{{ $topic->title }}" src="{{ isset($topic->avatar) ? 'uploads/'.$topic->avatar : 'https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/new_default_img.png' }}"/>
           <div class="card-body">
             <h4 class="card-text text-truncate">{{ $topic->title }}</h4>
             <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>

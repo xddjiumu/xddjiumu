@@ -3,12 +3,12 @@
 @section('title', '产品中心')
 
 @section('content')
-<div class="text-center indexblock text-white pt-5 my-2" style="background-image: url('http://demo.cssmoban.com/cssthemes5/twts_169_bell/img/parallax-bg.jpg'); background-position: 0px -52.4px;">
+<div class="text-center indexblock text-white pt-5 my-2" style="background-image: url('https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/parallax-bg.jpg'); background-position: 0px -52.4px;">
   <h2 class="px-2 pt-5">产品中心</h2>
   <p class="pb-5 px-2"></p>
   <div class="row p-2 m-0">
     <div class="col-12 col-sm-8 m-auto">
-      <img alt="Bell - A perfect theme" class="w-100" src="/images/indexgadgets.png">
+      <img alt="Bell - A perfect theme" class="w-100" src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/indexgadgets.png">
     </div>
   </div>
 </div>
@@ -24,7 +24,7 @@
         </div>
         <p class="text-indent">PP-R管道是一种新型的给水管道系统，其以耐热性能好、使用寿命长、耐腐蚀性好、导热系数低、管道阻力小、管件连接牢固、价格便宜等优点，成为目前全球最理想的家庭供水管道，是欧美发达国家给水管道的主导产品，在中国应用率达90%以上。无规共聚丙烯( PP-R)管材在冷热水输送工程中采用热熔接技术，其综合技术性能和经济指标优于镀锌管、UPVC管、铝塑稳态管、交联聚乙烯管及聚丁烯管，同时，其以优异的卫生性能给所有使用者带来了健康的水源。根据权威性资料显示，该类复合原材料的老化期超过50年，经国家化学建材检测中心检测合格。号称永不结垢、永不生锈、永不渗漏、绿色高级给水材料。</p>
       </div>
-      <img src="/images/p2.jpg" class="img-fluid w-100 mb-3" alt="Responsive image">
+      <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p2.jpg" class="img-fluid w-100 mb-3" alt="Responsive image">
       <div class="col-md-6">
         <h4 class="text-primary">产品特点</h4>
         <p class="py-1">1、卫生、无毒、无锈蚀、永不结垢</p>
@@ -87,7 +87,7 @@
           </tbody>
         </table>
       </div>
-      <img src="/images/p2-1.jpg" class="img-fluid mb-3" alt="Responsive image">
+      <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p2-1.jpg" class="img-fluid mb-3" alt="Responsive image">
       <div class="col-md-6">
         <h4 class="text-primary">使用范围</h4>
         <p class="py-1">1、冷热饮用水管系统</p>
@@ -121,7 +121,7 @@
   </div>
 </section>
 
-<div class="text-center text-white p-5 my-2" style="background-image: url('http://demo.cssmoban.com/cssthemes5/twts_169_bell/img/parallax-bg.jpg'); background-position: 0px -52.4px;">
+<div class="text-center text-white p-5 my-2" style="background-image: url('https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/parallax-bg.jpg'); background-position: 0px -52.4px;">
   <h2 class="px-2 pt-5">精品宝绿系列管材</h2>
 </div>
 
@@ -135,7 +135,7 @@
           <div class="p-2"><a href="{{ route('product2') }}" class="btn btn-primary">查看产品</a></div>
         </div>
         <p class="text-indent">PP-R管道是一种新型的给水管道系统，其以耐热性能好、使用寿命长、耐腐蚀性好、导热系数低、管道阻力小、管件连接牢固、价格便宜等优点，成为目前全球最理想的家庭供水管道，是欧美发达国家给水管道的主导产品，在中国应用率达90%以上。无规共聚丙烯( PP-R)管材在冷热水输送工程中采用热熔接技术，其综合技术性能和经济指标优于镀锌管、UPVC管、铝塑稳态管、交联聚乙烯管及聚丁烯管，同时，其以优异的卫生性能给所有使用者带来了健康的水源。根据权威性资料显示，该类复合原材料的老化期超过50年，经国家化学建材检测中心检测合格。号称永不结垢、永不生锈、永不渗漏、绿色高级给水材料。</p>
-        <img src="/images/p1.jpg" class="img-fluid w-100 mb-3" alt="Responsive image">
+        <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p1.jpg" class="img-fluid w-100 mb-3" alt="Responsive image">
       </div>
       <div class="col-md-6">
         <h4 class="text-primary">产品特点</h4>
@@ -199,7 +199,7 @@
           </tbody>
         </table>
       </div>
-      <img src="/images/p1-1.jpg" class="img-fluid mb-3" alt="Responsive image">
+      <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p1-1.jpg" class="img-fluid mb-3" alt="Responsive image">
       <div class="col-md-6">
         <h4 class="text-primary">使用范围</h4>
         <p class="py-1">1、冷热饮用水管系统</p>
@@ -236,7 +236,7 @@
   </div>
 </section>
 
-<div class="text-center text-white p-5 my-2" style="background-image: url('http://demo.cssmoban.com/cssthemes5/twts_169_bell/img/parallax-bg.jpg'); background-position: 0px -52.4px;">
+<div class="text-center text-white p-5 my-2" style="background-image: url('https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/parallax-bg.jpg'); background-position: 0px -52.4px;">
   <h2 class="px-2 pt-5">PE-RT地暖管</h2>
 </div>
 
@@ -250,7 +250,7 @@
         </div>
         <p class="text-indent">PE-RT家装采暖管，是一种可以用于热水管的非交联的聚乙烯，也有人突出了其非交联的特性，叫它"耐高温非交联聚乙烯"。它是一种采用特殊的分子设计和合成工艺生产的一种中密度聚乙烯，它采用乙烯和辛烯共聚的方法，通过控制侧链的数量和分布得到独特的分子结构，来提高PE的耐热性。由于辛烯短支链的存在使PE的大分子不能结晶在一个片状晶体中，而是贯穿在几个晶体中，形成了晶体之间的联结，它保留了PE的良好的柔韧性，高热传导性和惰性，同时使之耐压性更好，这种改性方法和目前市场上常见的PPR类似。PE-RT管可以用于ISO10508中规定的热水管的所有使用级别! 
 </p>
-        <img src="/images/p3.jpg" class="img-fluid w-100 mb-3" alt="Responsive image">
+        <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p3.jpg" class="img-fluid w-100 mb-3" alt="Responsive image">
       </div>
       <div class="col-md-6">
         <h4 class="text-primary">产品特点</h4>
@@ -317,7 +317,7 @@
           </tbody>
         </table>
       </div>
-      <img src="/images/p3-1.jpg" class="img-fluid mb-3" alt="Responsive image">
+      <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p3-1.jpg" class="img-fluid mb-3" alt="Responsive image">
       <div class="col-md-6">
         <h4 class="text-primary">使用范围</h4>
         <p class="py-1">1、温水板供暖管：住宅/商场/宾馆/体育馆/医院等的地板温水供暖管 </p>
@@ -350,7 +350,7 @@
   </div>
 </section>
 
-<div class="text-center text-white p-5 my-2" style="background-image: url('http://demo.cssmoban.com/cssthemes5/twts_169_bell/img/parallax-bg.jpg'); background-position: 0px -52.4px;">
+<div class="text-center text-white p-5 my-2" style="background-image: url('https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/parallax-bg.jpg'); background-position: 0px -52.4px;">
   <h2 class="px-2 pt-5">PE-RT阻氧管</h2>
 </div>
 
@@ -365,10 +365,10 @@
         <p class="text-indent">PE-RT阻氧地暖管，主要用于地面辐射采暖系统，采用优质的阻氧层EVOH系列中的FP104B材料生产，其PE-RT阻氧管的透氧率是0.07， 德国DIN4726及国家标准GB28799关于带阻氧层的PE-RT的要求为0.1，完全满足标准要求。三层阻氧型PERT采用陶氏化学2388II料， 三层阻氧有效阻止氧气渗透，对系统末端零部件起到良好保护作用，避免腐蚀老化，延长其使用寿命。</p>
         <div class="d-flex flex-row mb-3">
           <div class="p-2">
-            <img src="/images/p4-1.jpg" class="img-fluid mb-3" alt="Responsive image">
+            <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p4-1.jpg" class="img-fluid mb-3" alt="Responsive image">
           </div>
           <div class="p-2">
-            <img src="/images/p4-2.jpg" class="img-fluid mb-3" alt="Responsive image">
+            <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p4-2.jpg" class="img-fluid mb-3" alt="Responsive image">
           </div>
         </div>
       </div>
@@ -380,7 +380,7 @@
         <p class="py-1">4. 利用专用的去皮装置（阻氧管削皮器），可以均匀有效地去除端口的阻氧层和胶层，简易进行管材与管件的热熔承插连接。保持了PE-RT管道连接方便可靠、便于维修的应用优点。</p>
       </div>
       <div class="col-md-4">
-        <img src="/images/p4-2.jpg" class="img-fluid mb-3" alt="Responsive image">
+        <img src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/p4-2.jpg" class="img-fluid mb-3" alt="Responsive image">
       </div>
     </div>
   </div>

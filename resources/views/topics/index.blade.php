@@ -4,7 +4,7 @@
 
 @section('content')
 <section>
-  <div class="jumbotron" style="background: url(/images/contact-bg.jpg) no-repeat center;background-size: 100% 100%;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8">
+  <div class="jumbotron" style="background: url(https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/contact-bg.jpg) no-repeat center;background-size: 100% 100%;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8">
     <div class="container">
       @if (isset($category))
         <div class="alert alert-info" role="alert">

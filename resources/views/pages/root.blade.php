@@ -8,13 +8,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/images/banner1.jpg" alt="First slide">
+      <img class="d-block w-100" src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/banner1.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/images/banner2.jpg" alt="Second slide">
+      <img class="d-block w-100" src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/banner2.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-    <img class="d-block w-100" src="/images/banner3.jpg" alt="...">
+    <img class="d-block w-100" src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/banner3.jpg" alt="...">
     {{--
     <div class="carousel-caption d-none d-md-block">
        <h5>..基材.</h5> 
@@ -82,7 +82,7 @@
   </div>
 </div>
 
-<div class="text-center indexblock text-white pt-5 my-2" style="background-image: url('http://demo.cssmoban.com/cssthemes5/twts_169_bell/img/parallax-bg.jpg'); background-position: 0px -52.4px;">
+<div class="text-center indexblock text-white pt-5 my-2" style="background-image: url('https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/parallax-bg.jpg'); background-position: 0px -52.4px;">
   <h2 class="px-2">产品展示</h2>
   <p class="pb-5 px-2">公司采用具有国际先进水平的现代化生产设备、专业检测设备和进口优质原料，以传统的制管工艺为依托，传承现代化科技精髓，产品达到国际健康管道标准。企业严格执行IS09001:2008国际质量管理体系认证</p>
   <div class="row p-2 m-0">
@@ -146,7 +146,7 @@
       @foreach ($dynamic as $topic)
       <div class="col-md-3 col-sm-6 my-2">
         <div class="card">
-          <img class="card-img-top news-avatar" src="{{ isset($topic->avatar) ? 'uploads/'.$topic->avatar : './images/console/new_default_img.png' }}" alt="{{ $topic->title }}">
+          <img class="card-img-top news-avatar" src="{{ isset($topic->avatar) ? 'uploads/'.$topic->avatar : 'https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/new_default_img.png' }}" alt="{{ $topic->title }}">
           <div class="card-body">
             <h5 class="card-title text-truncate">{{ $topic->title }}</h5>
             <p class="card-text text-pheight4overflow">{{ $topic->excerpt }}</p>

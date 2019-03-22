@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row text-white pt-5">
           <div class="col-12 col-sm-6 col-md-3 text-center pb-4">
-            <img class="mb-2 w-100" src="/images/console/logofooter.png" alt="asd">
+            <img class="mb-2 w-100" src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/logofooter.png" alt="asd">
             <small class="d-block text-dark text-right">{{ __('local Company address') }}</small>
             <small class="d-block text-dark text-right">{{ __('local Copyright') }}</small>
             <small class="d-block text-dark text-right">{{ __('local Production address') }}</small>
@@ -10,11 +10,11 @@
           <div class="col-7 col-md-2">
           	<div class="row text-center">
                 <div class="col-6">
-                    <img class="w-100" src="/images/console/weixinqrcode.jpg">
+                    <img class="w-100" src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/weixinqrcode.jpg">
                     <p>{{ __('local Weixinqrcode') }}</p>
                 </div>
                 <div class="col-6">
-                    <img class="w-100" src="/images/console/httpwwwqrcode.jpg">
+                    <img class="w-100" src="https://thitxdd.oss-cn-hangzhou.aliyuncs.com/jomuxdd/console/httpwwwqrcode.jpg">
                     <p>{{ __('local Abbreviation') }}</p>
                 </div>
             </div>
