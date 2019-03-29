@@ -23,7 +23,7 @@
     }
     function createMap(){ 
       map = new BMap.Map("map"); 
-      map.centerAndZoom(new BMap.Point(113.035718,28.173597),16);
+      map.centerAndZoom(new BMap.Point(120.286731,30.501375),16);
     }
     function setMapEvent(){
       map.enableScrollWheelZoom();
@@ -38,7 +38,7 @@
     }
     function addMapOverlay(){
       var markers = [
-        {content:"湖南响当当九牧管业有限公司",title:"华晨世纪广场",imageOffset: {width:0,height:-21},position:{lat:28.173506,lng:113.035588}}
+        {content:"湖南响当当九牧管业有限公司",title:"浙江省杭州市临杭工业园区",imageOffset: {width:0,height:-21},position:{lat:30.501375,lng:120.286731}}
       ];
       for(var index = 0; index < markers.length; index++ ){
         var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
