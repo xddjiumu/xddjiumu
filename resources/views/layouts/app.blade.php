@@ -13,6 +13,15 @@
   var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?a3bce2022619eb311125de4b2941899b";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
     hm.src = "https://hm.baidu.com/hm.js?2d8cee5523019f8a7fc8d80fc04797af";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
